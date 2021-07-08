@@ -6,35 +6,33 @@ import 'package:sizer/sizer.dart';
 class BannerDesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        vertical: 2.w,
-        horizontal: 1.h,
-      ),
+    return SizedBox(
+      width: double.infinity,
       child: Stack(
         children: [
           Positioned(
-            child: Container(
-              width: 200.w,
-              height: 58.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                    'assets/images/home_desktop.gif',
-                  ),
+            child: Image(
+              width: double.infinity,
+              //height: MediaQuery.of(context).size.height,
+              image: ResizeImage(
+                NetworkImage(
+                  'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png',
                 ),
+                height: MediaQuery.of(context).size.height.toInt(),
+                width: double.maxFinite.toInt(),
+               
               ),
+              fit: BoxFit.cover,
             ),
           ),
           Positioned(
+            //top:200,
             child: Html(
-              data: '''<div 
-	                            class="apply-button" 
-	                            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
-	                            data-button-theme="light"
-	                            style="height: 44px; width: 312px"
+              data: '''<div
+                              class="apply-button"
+                              data-hackathon-slug="YOUR-HACKATHON-SLUG"
+                              data-button-theme="light"
+                              style="height: 44px; width: 312px"
                         ></div>''',
             ),
           ),
@@ -67,7 +65,8 @@ class BannerMobile extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 image: DecorationImage(
-                  image: AssetImage('assets/images/home_mobile.gif'),
+                  image: AssetImage(
+                      'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png'),
                 ),
               ),
               //child: Image.asset('assets/images/name_mobile.jpeg'),

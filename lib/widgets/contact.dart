@@ -87,19 +87,26 @@ class Contact extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: TextButton.icon(
-                        onPressed: () {},
+                      child: IconButton(
+                        onPressed: () {
+                           canLaunch(
+                            'mailto:mlsaamu1@gmail.com',
+                          ).then(
+                            (value) {
+                              value
+                                  ? launch(
+                                      'mailto:mlsaamu1@gmail.com',
+                                    )
+                                  : throw 'Could not launch';
+                            },
+                          );
+                          
+                        },
                         icon: FaIcon(
-                          Icons.phone,
+                          Icons.email,
                           color: Colors.white,
                         ),
-                        label: Text(
-                          '+91 7017098003, +91 8077880876',
-                          style: GoogleFonts.lato(
-                            color: Colors.white,
-                            fontSize: 10.sp,
-                          ),
-                        ),
+                        
                       ),
                     )
                   ],
@@ -113,7 +120,7 @@ class Contact extends StatelessWidget {
                 width: 200.w,
                 child: Center(
                   child: Text(
-                    'Email : mlsaamu1@gmail.com',
+                    '+91 7017098003, +91 8077880876',
                     style: GoogleFonts.lato(
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w700,

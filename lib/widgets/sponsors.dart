@@ -62,7 +62,7 @@ class Sponsors extends StatelessWidget {
                           height: Utils.width * 0.35,
                           child: Center(
                             child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625679811/devfolio_fabwf5.png',
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
                             ),
                           ),
                         ),
@@ -138,7 +138,7 @@ class SilverSponsors extends StatelessWidget {
                           height: Utils.width * 0.10,
                           child: Center(
                             child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680198/polygon_krn98p.png',
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
                             ),
                           ),
                         ),
@@ -180,7 +180,7 @@ class SilverSponsors extends StatelessWidget {
                           height: Utils.width * 0.10,
                           child: Center(
                             child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680159/portis_hjmqqu.png',
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
                             ),
                           ),
                         ),

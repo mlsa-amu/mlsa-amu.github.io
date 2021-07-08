@@ -188,11 +188,11 @@ class _HomePageState extends State<HomePage> {
               colors: [
                 //Colors.teal,
                 Color(0xff1f2021),
-                Colors.teal,
+                Colors.red.shade900,
                 // Color(0xff1f2021),
                 // Colors.purple,
                 Color(0xff1f2021),
-                Colors.teal,
+                Colors.red.shade900,
                 Color(0xff1f2021),
               ],
             ),
@@ -203,31 +203,187 @@ class _HomePageState extends State<HomePage> {
             ),
             child: SingleChildScrollView(
               physics: ClampingScrollPhysics(),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Center(
-                      child: SizerUtil.orientation == Orientation.portrait
-                          ? BannerMobile()
-                          : BannerDesk(),
-                    ),
-                    Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(Utils.width * 0.025),
-                        child: Container(
-                          //width: 95.w,
-                          //height: Utils.height * 0.4,
-                          child: Card(
-                            color: Color(0xff18191a),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            elevation: 100,
-                            child: Padding(
-                              padding: EdgeInsets.all(
-                                Utils.width * 0.025,
+              child: Column(
+                children: [
+                  Center(
+                    child: SizerUtil.orientation == Orientation.portrait
+                        ? BannerMobile()
+                        : BannerDesk(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: EdgeInsets.all(Utils.width * 0.025),
+                            child: Container(
+                              //width: 95.w,
+                              //height: Utils.height * 0.4,
+                              child: Card(
+                                color: Color(0xff18191a),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                elevation: 100,
+                                child: Padding(
+                                  padding: EdgeInsets.all(
+                                    Utils.width * 0.025,
+                                  ),
+                                  child: SingleChildScrollView(
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Padding(
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 2.w, horizontal: 1.h),
+                                          child: Text(
+                                            'About The Event',
+                                            style: GoogleFonts.balooBhai(
+                                              fontSize: 25.sp,
+                                              fontWeight: FontWeight.bold,
+                                              color: Color(0xff50e6ff),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 2.w, horizontal: 1.h),
+                                          child: Html(
+                                            data: Static.about,
+                                            // style: GoogleFonts.lato(
+                                            //   fontSize: Utils.width * 0.013,
+                                            //   fontWeight: FontWeight.w500,
+                                            //   color: Colors.white,
+                                            // ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          //width: Utils.width * 0.95,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _showFrontSide
+                                          ? Color(0xff18191a)
+                                          : Colors.grey,
+                                    ),
+                                    onPressed: () {
+                                      setState(() {
+                                        _showFrontSide = true;
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 2.w, horizontal: 1.h),
+                                      child: SingleChildScrollView(
+                                        child: Text(
+                                          'Themes',
+                                          style: GoogleFonts.lato(
+                                            color: _showFrontSide
+                                                ? Colors.purple
+                                                : Colors.white54,
+                                            fontSize: Utils.width * 0.03,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _showFrontSide
+                                          ? Colors.grey
+                                          : Color(0xff18191a),
+                                    ),
+                                    onPressed: () {
+                                      setState(() {
+                                        _showFrontSide = false;
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 2.w, horizontal: 1.h),
+                                      child: SingleChildScrollView(
+                                        child: Text(
+                                          'Tracks',
+                                          style: GoogleFonts.lato(
+                                            color: _showFrontSide
+                                                ? Colors.white30
+                                                : Colors.purple,
+                                            fontSize: Utils.width * 0.03,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizerUtil.orientation == Orientation.landscape
+                                  ? GridView.builder(
+                                      physics: ClampingScrollPhysics(),
+                                      shrinkWrap: true,
+                                      gridDelegate:
+                                          SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 3,
+                                        // mainAxisSpacing: 5,
+                                        // crossAxisSpacing: 5,
+                                        childAspectRatio: 0.8,
+                                      ),
+                                      itemCount: 6,
+                                      itemBuilder: (context, index) {
+                                        return _buildFlipAnimation(index);
+                                      },
+                                    )
+                                  : ListView.builder(
+                                      physics: ClampingScrollPhysics(),
+                                      shrinkWrap: true,
+                                      itemCount: 6,
+                                      itemBuilder: (context, index) {
+                                        return _buildFlipAnimation(index);
+                                      },
+                                    ),
+                            ],
+                          ),
+                        ),
+                        Opacity(
+                          opacity: 0.8,
+                          child: Jury(),
+                        ),
+                        //InitialJury(),
+                        Opacity(
+                          opacity: 0.8,
+                          child: Sponsors(),
+                        ),
+                        Opacity(
+                          opacity: 0.8,
+                          child: SilverSponsors(),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 2.w, horizontal: 1.h),
+                          child: Container(
+                            //height: Utils.height * 0.5,
+                            //width: Utils.width * 0.95,
+                            child: Card(
+                              color: Color(0xff18191a),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              elevation: 100,
                               child: SingleChildScrollView(
                                 child: Column(
                                   mainAxisAlignment:
@@ -235,191 +391,49 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsets.symmetric(
-                                          vertical: 2.w, horizontal: 1.h),
+                                        vertical: 2.w,
+                                        horizontal: 1.h,
+                                      ),
                                       child: Text(
-                                        'About The Event',
+                                        'Timeline ',
                                         style: GoogleFonts.balooBhai(
                                           fontSize: 25.sp,
-                                          fontWeight: FontWeight.bold,
-                                          color: Color(0xff50e6ff),
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.symmetric(
-                                          vertical: 2.w, horizontal: 1.h),
-                                      child: Html(
-                                        data: Static.about,
-                                        // style: GoogleFonts.lato(
-                                        //   fontSize: Utils.width * 0.013,
-                                        //   fontWeight: FontWeight.w500,
-                                        //   color: Colors.white,
-                                        // ),
-                                      ),
-                                    ),
+                                        padding: EdgeInsets.symmetric(
+                                          vertical: 2.w,
+                                          horizontal: 1.h,
+                                        ),
+                                        child: Timeline()),
                                   ],
                                 ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                    Container(
-                      //width: Utils.width * 0.95,
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  primary: _showFrontSide
-                                      ? Color(0xff18191a)
-                                      : Colors.grey,
-                                ),
-                                onPressed: () {
-                                  setState(() {
-                                    _showFrontSide = true;
-                                  });
-                                },
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(
-                                      vertical: 2.w, horizontal: 1.h),
-                                  child: SingleChildScrollView(
-                                    child: Text(
-                                      'Themes',
-                                      style: GoogleFonts.lato(
-                                        color: _showFrontSide
-                                            ? Colors.purple
-                                            : Colors.white54,
-                                        fontSize: Utils.width * 0.03,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  primary: _showFrontSide
-                                      ? Colors.grey
-                                      : Color(0xff18191a),
-                                ),
-                                onPressed: () {
-                                  setState(() {
-                                    _showFrontSide = false;
-                                  });
-                                },
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(
-                                      vertical: 2.w, horizontal: 1.h),
-                                  child: SingleChildScrollView(
-                                    child: Text(
-                                      'Tracks',
-                                      style: GoogleFonts.lato(
-                                        color: _showFrontSide
-                                            ? Colors.white30
-                                            : Colors.purple,
-                                        fontSize: Utils.width * 0.03,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizerUtil.orientation == Orientation.landscape
-                              ? GridView.builder(
-                                  physics: ClampingScrollPhysics(),
-                                  shrinkWrap: true,
-                                  gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 3,
-                                    // mainAxisSpacing: 5,
-                                    // crossAxisSpacing: 5,
-                                    childAspectRatio: 0.8,
-                                  ),
-                                  itemCount: 6,
-                                  itemBuilder: (context, index) {
-                                    return _buildFlipAnimation(index);
-                                  },
-                                )
-                              : ListView.builder(
-                                  physics: ClampingScrollPhysics(),
-                                  shrinkWrap: true,
-                                  itemCount: 6,
-                                  itemBuilder: (context, index) {
-                                    return _buildFlipAnimation(index);
-                                  },
-                                ),
-                        ],
-                      ),
-                    ),
-                    Jury(),
-                    //InitialJury(),
-                    Sponsors(),
-                    SilverSponsors(),
-                    Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 2.w, horizontal: 1.h),
-                      child: Container(
-                        //height: Utils.height * 0.5,
-                        //width: Utils.width * 0.95,
-                        child: Card(
-                          color: Color(0xff18191a),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          elevation: 100,
-                          child: SingleChildScrollView(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.symmetric(
-                                    vertical: 2.w,
-                                    horizontal: 1.h,
-                                  ),
-                                  child: Text(
-                                    'Timeline ',
-                                    style: GoogleFonts.balooBhai(
-                                      fontSize: 25.sp,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                    padding: EdgeInsets.symmetric(
-                                      vertical: 2.w,
-                                      horizontal: 1.h,
-                                    ),
-                                    child: Timeline()),
-                              ],
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 2.w, horizontal: 1.h),
+                          child: Text(
+                            'Organizing Team',
+                            style: GoogleFonts.balooBhai(
+                              fontSize: 25.sp,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
                             ),
                           ),
                         ),
-                      ),
+                        Team(),
+                        Contact(),
+                        Footer(),
+                      ],
                     ),
-                    Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 2.w, horizontal: 1.h),
-                      child: Text(
-                        'Organizing Team',
-                        style: GoogleFonts.balooBhai(
-                          fontSize: 25.sp,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    Team(),
-                    Contact(),
-                    Footer(),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
