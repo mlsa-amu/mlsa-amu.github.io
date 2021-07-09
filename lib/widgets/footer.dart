@@ -8,7 +8,7 @@ class Footer extends StatelessWidget {
       opacity: 0.5,
       child: Container(
         width: double.maxFinite,
-        height: 5.h,
+        height: 10.h,
         color: Colors.black,
         child: Column(
           children: [
