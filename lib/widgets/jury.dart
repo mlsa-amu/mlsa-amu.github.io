@@ -55,6 +55,9 @@ class Jury extends StatelessWidget {
                   child: ListView.builder(
                     itemCount: Static.jury.length,
                     shrinkWrap: true,
+                    physics: SizerUtil.orientation == Orientation.portrait
+                        ? NeverScrollableScrollPhysics()
+                        : null,
                     scrollDirection:
                         SizerUtil.orientation == Orientation.portrait
                             ? Axis.vertical

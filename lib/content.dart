@@ -69,10 +69,10 @@ class Static {
     Color(0xffBACD24),
     Color(0xffC9E265),
     Colors.purple[900],
-    Color(0xff891515),
+    Color(0xffFFD600),
     Color(0xff30244D),
     Color(0xffF8D445),
-    Colors.purple[900],
+    Color(0xffFF4D4D),
     Colors.purple,
     
   ];
