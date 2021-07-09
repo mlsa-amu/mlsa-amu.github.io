@@ -77,10 +77,17 @@ class Static {
   ];
   static List<String> organizingImages = [
     'v1625389953/pranshi_yylzj9.jpg',
-    'v1625389955/mine_x1wgly.jpg',
-    'v1625389954/saloni_oyvxtb.jpg',
-    'v1625672777/yash_q6jdxw.jpg',
+    'v1625871833/mine23_vpjxar.jpg',
+    'v1625869421/propicpink_lra8yc.png',
+    'v1625869433/IMG_9501_2_b6x2fo.jpg',
     'v1625850929/harsh_ywmtxx.jpg',
+  ];
+  static List<String> postOrg = [
+    'Lead Organizer',
+    'Technical Team',
+    'Management Team',
+    'Management Team',
+    'Technical Team',
   ];
   static List<String> linkedinTeam = [
     'http://linkedin.com/in/pranshi112',

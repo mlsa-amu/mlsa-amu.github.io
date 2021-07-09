@@ -148,6 +148,10 @@ class PPrizes extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+            side: BorderSide(
+              color: Color(0XFFC00902),
+              width: 1,
+            ),
           ),
           elevation: 100,
           child: SingleChildScrollView(
@@ -179,7 +183,7 @@ class PPrizes extends StatelessWidget {
                     : ListView.builder(
                         physics: ClampingScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 8,
+                        itemCount: Static.partPrizes.length,
                         itemBuilder: (context, index) {
                           return getPrizeItem(index);
                         },

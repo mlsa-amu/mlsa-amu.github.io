@@ -16,6 +16,10 @@ class WiningPrizes extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+             side: BorderSide(
+              color: Color(0XFFC00902),
+              width: 1,
+            ),
           ),
           elevation: 100,
           child: SingleChildScrollView(

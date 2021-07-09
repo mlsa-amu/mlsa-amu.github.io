@@ -110,7 +110,7 @@ class BannerMobile extends StatelessWidget {
                       'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png'),
                 ),
               ),
-              child: Image.asset('assets/images/name_mobile.jpeg'),
+              // child: Image.asset('assets/images/name_mobile.jpeg'),
             ),
 
             Column(

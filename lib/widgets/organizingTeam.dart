@@ -70,6 +70,14 @@ class Team extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
+              Text(
+                Static.postOrg[index],
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8.sp,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
             ],
           );
         },
