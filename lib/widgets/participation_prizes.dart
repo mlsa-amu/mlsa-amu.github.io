@@ -38,13 +38,13 @@ class ParticipationPrizes extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       margin: const EdgeInsets.all(8.0),
                       decoration: BoxDecoration(
-                        //color: Color(0xff890f2b),
-                        image: DecorationImage(
-                          image: AssetImage(
-                            'assets/images/pBg.png',
-                          ),
-                          fit: BoxFit.cover
-                        ),
+                        color: Static.colors[Static.partPrizesContent.indexOf(img)],
+                        // image: DecorationImage(
+                        //   image: AssetImage(
+                        //     'assets/images/pBg.png',
+                        //   ),
+                        //   fit: BoxFit.cover
+                        // ),
                         // gradient: new LinearGradient(
                         //   colors: [
                         //     Color(0xff1f2021),
