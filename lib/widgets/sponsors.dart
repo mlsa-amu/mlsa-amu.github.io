@@ -15,6 +15,10 @@ class Sponsors extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+            side: BorderSide(
+              color: Color(0XFFC00902),
+              width: 1,
+            ),
           ),
           elevation: 100,
           child: SingleChildScrollView(
@@ -36,8 +40,9 @@ class Sponsors extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  child: Wrap(
+                    alignment: WrapAlignment.center,
+                    crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.symmetric(
@@ -45,39 +50,36 @@ class Sponsors extends StatelessWidget {
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.35,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
-                            ),
+                          height: Utils.width * 0.25,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 2.w,
-                          horizontal: 1.h,
+                          horizontal: 2.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.35,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
-                            ),
+                          height: Utils.width * 0.15,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical:
+                              SizerUtil.orientation == Orientation.landscape
+                                  ? 2.w
+                                  : 4.w,
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.35,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
-                            ),
+                          height: Utils.width * 0.25,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
                           ),
                         ),
                       ),
@@ -105,6 +107,10 @@ class SilverSponsors extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+            side: BorderSide(
+              color: Color(0XFFC00902),
+              width: 1,
+            ),
           ),
           elevation: 100,
           child: SingleChildScrollView(
@@ -126,62 +132,63 @@ class SilverSponsors extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  child: Wrap(
+                    alignment: WrapAlignment.center,
+                    crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical: 4.w,
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.10,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
-                            ),
+                          height: SizerUtil.orientation == Orientation.landscape
+                              ? Utils.width * 0.10
+                              : Utils.width * 0.15,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical: 4.w,
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.10,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
-                            ),
+                          height: SizerUtil.orientation == Orientation.landscape
+                              ? Utils.width * 0.10
+                              : Utils.width * 0.15,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical: 4.w,
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.10,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
-                            ),
+                          height: SizerUtil.orientation == Orientation.landscape
+                              ? Utils.width * 0.10
+                              : Utils.width * 0.25,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical: 4.w,
                           horizontal: 1.h,
                         ),
                         child: Container(
-                          height: Utils.width * 0.10,
-                          child: Center(
-                            child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
-                            ),
+                          height: SizerUtil.orientation == Orientation.landscape
+                              ? Utils.width * 0.10
+                              : Utils.width * 0.15,
+                          child: Image.network(
+                            'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
                           ),
                         ),
                       ),

@@ -351,37 +351,37 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ],
                             ),
-                            SizerUtil.orientation == Orientation.landscape
-                                ? GridView.builder(
-                                    physics: ClampingScrollPhysics(),
-                                    shrinkWrap: true,
-                                    gridDelegate:
-                                        SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 3,
-                                      // mainAxisSpacing: 5,
-                                      // crossAxisSpacing: 5,
-                                      childAspectRatio: 0.8,
-                                    ),
-                                    itemCount: 6,
-                                    itemBuilder: (context, index) {
-                                      return _buildFlipAnimation(index);
-                                    },
-                                  )
-                                : ListView.builder(
-                                    physics: ClampingScrollPhysics(),
-                                    shrinkWrap: true,
-                                    itemCount: 6,
-                                    itemBuilder: (context, index) {
-                                      return _buildFlipAnimation(index);
-                                    },
-                                  ),
+                            // SizerUtil.orientation == Orientation.landscape
+                            //     ? GridView.builder(
+                            //         physics: ClampingScrollPhysics(),
+                            //         shrinkWrap: true,
+                            //         gridDelegate:
+                            //             SliverGridDelegateWithFixedCrossAxisCount(
+                            //           crossAxisCount: 3,
+                            //           // mainAxisSpacing: 5,
+                            //           // crossAxisSpacing: 5,
+                            //           childAspectRatio: 0.8,
+                            //         ),
+                            //         itemCount: 6,
+                            //         itemBuilder: (context, index) {
+                            //           return _buildFlipAnimation(index);
+                            //         },
+                            //       )
+                            //     : ListView.builder(
+                            //         physics: ClampingScrollPhysics(),
+                            //         shrinkWrap: true,
+                            //         itemCount: 6,
+                            //         itemBuilder: (context, index) {
+                            //           return _buildFlipAnimation(index);
+                            //         },
+                            //       ),
                           ],
                         ),
                       ),
-                      Opacity(
-                        opacity: 0.8,
-                        child: Jury(),
-                      ),
+                      // Opacity(
+                      //   opacity: 0.8,
+                      //   child: Jury(),
+                      // ),
                       //InitialJury(),
                       Opacity(
                         opacity: 0.8,
@@ -446,9 +446,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      Team(),
-                      Contact(),
-                      Footer(),
+                      // Team(),
+                      // Contact(),
+                      // Footer(),
                     ],
                   ),
                 ],
