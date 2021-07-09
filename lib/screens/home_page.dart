@@ -11,6 +11,7 @@ import 'package:mlsa_amu/widgets/jury.dart';
 import 'package:mlsa_amu/widgets/organizingTeam.dart';
 import 'package:mlsa_amu/widgets/sponsors.dart';
 import 'package:mlsa_amu/widgets/timeline.dart';
+import 'package:mlsa_amu/widgets/winingPrizes.dart';
 import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
@@ -224,11 +225,11 @@ class _HomePageState extends State<HomePage> {
               physics: ClampingScrollPhysics(),
               child: Column(
                 children: [
-                  Center(
-                    child: SizerUtil.orientation == Orientation.portrait
-                        ? BannerMobile()
-                        : BannerDesk(),
-                  ),
+                  // Center(
+                  //   child: SizerUtil.orientation == Orientation.portrait
+                  //       ? BannerMobile()
+                  //       : BannerDesk(),
+                  // ),
                   Column(
                     children: [
                       Center(
@@ -357,46 +358,46 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ],
                             ),
-                            SizerUtil.orientation == Orientation.landscape
-                                ? GridView.builder(
-                                    physics: ClampingScrollPhysics(),
-                                    shrinkWrap: true,
-                                    gridDelegate:
-                                        SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 3,
-                                      // mainAxisSpacing: 5,
-                                      // crossAxisSpacing: 5,
-                                      childAspectRatio: 0.8,
-                                    ),
-                                    itemCount: 6,
-                                    itemBuilder: (context, index) {
-                                      return _buildFlipAnimation(index);
-                                    },
-                                  )
-                                : ListView.builder(
-                                    physics: ClampingScrollPhysics(),
-                                    shrinkWrap: true,
-                                    itemCount: 6,
-                                    itemBuilder: (context, index) {
-                                      return _buildFlipAnimation(index);
-                                    },
-                                  ),
+                            // SizerUtil.orientation == Orientation.landscape
+                            //     ? GridView.builder(
+                            //         physics: ClampingScrollPhysics(),
+                            //         shrinkWrap: true,
+                            //         gridDelegate:
+                            //             SliverGridDelegateWithFixedCrossAxisCount(
+                            //           crossAxisCount: 3,
+                            //           // mainAxisSpacing: 5,
+                            //           // crossAxisSpacing: 5,
+                            //           childAspectRatio: 0.8,
+                            //         ),
+                            //         itemCount: 6,
+                            //         itemBuilder: (context, index) {
+                            //           return _buildFlipAnimation(index);
+                            //         },
+                            //       )
+                            //     : ListView.builder(
+                            //         physics: ClampingScrollPhysics(),
+                            //         shrinkWrap: true,
+                            //         itemCount: 6,
+                            //         itemBuilder: (context, index) {
+                            //           return _buildFlipAnimation(index);
+                            //         },
+                            //       ),
                           ],
                         ),
                       ),
-                      Opacity(
-                        opacity: 0.9,
-                        child: Jury(),
-                      ),
-                      //InitialJury(),
-                      Opacity(
-                        opacity: 0.9,
-                        child: Sponsors(),
-                      ),
-                      Opacity(
-                        opacity: 0.9,
-                        child: SilverSponsors(),
-                      ),
+                      // Opacity(
+                      //   opacity: 0.9,
+                      //   child: Jury(),
+                      // ),
+                      // //InitialJury(),
+                      // Opacity(
+                      //   opacity: 0.9,
+                      //   child: Sponsors(),
+                      // ),
+                      // Opacity(
+                      //   opacity: 0.9,
+                      //   child: SilverSponsors(),
+                      // ),
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),
@@ -441,6 +442,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
+                      WiningPrizes(),
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),
