@@ -92,7 +92,7 @@ class Sponsors extends StatelessWidget {
                           vertical:
                               SizerUtil.orientation == Orientation.landscape
                                   ? 2.w
-                                  : 4.w,
+                                  : 2.w,
                           horizontal: 1.h,
                         ),
                         child: GestureDetector(
@@ -101,6 +101,24 @@ class Sponsors extends StatelessWidget {
                             height: Utils.width * 0.25,
                             child: Image.network(
                               'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical:
+                              SizerUtil.orientation == Orientation.landscape
+                                  ? 2.w
+                                  : 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height: Utils.width * 0.15,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
                             ),
                           ),
                         ),
@@ -155,7 +173,7 @@ class SilverSponsors extends StatelessWidget {
                 ),
                 Center(
                   child: Wrap(
-                    alignment: WrapAlignment.center,
+                    alignment: WrapAlignment.spaceAround,
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Padding(
@@ -180,7 +198,7 @@ class SilverSponsors extends StatelessWidget {
                           child: Container(
                             height:
                                 SizerUtil.orientation == Orientation.landscape
-                                    ? Utils.width * 0.10
+                                    ? Utils.width * 0.12
                                     : Utils.width * 0.15,
                             child: Image.network(
                               'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
@@ -210,7 +228,7 @@ class SilverSponsors extends StatelessWidget {
                           child: Container(
                             height:
                                 SizerUtil.orientation == Orientation.landscape
-                                    ? Utils.width * 0.10
+                                    ? Utils.width * 0.15
                                     : Utils.width * 0.15,
                             child: Image.network(
                               'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
@@ -240,10 +258,10 @@ class SilverSponsors extends StatelessWidget {
                           child: Container(
                             height:
                                 SizerUtil.orientation == Orientation.landscape
-                                    ? Utils.width * 0.10
+                                    ? Utils.width * 0.20
                                     : Utils.width * 0.25,
                             child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+                              'https://res.cloudinary.com/vidita/image/upload/v1625834939/celo_b1tzlu.png',
                             ),
                           ),
                         ),
@@ -270,10 +288,46 @@ class SilverSponsors extends StatelessWidget {
                           child: Container(
                             height:
                                 SizerUtil.orientation == Orientation.landscape
-                                    ? Utils.width * 0.10
+                                    ? Utils.width * 0.15
                                     : Utils.width * 0.15,
                             child: Image.network(
                               'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.15
+                                    : Utils.width * 0.18,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625834828/replit2_f7t4r1.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.15
+                                    : Utils.width * 0.20,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625836106/xyz-logo-white_t6m8tf.png',
                             ),
                           ),
                         ),

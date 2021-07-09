@@ -148,7 +148,7 @@ class BannerMobile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '23th - 25th July',
+                  '23rd - 25th July',
                   style: GoogleFonts.balooBhai(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
