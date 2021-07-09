@@ -113,8 +113,32 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625834828/replit2_f7t4r1.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
   ];
+  static List<String> silverSponsorsLogo = [
+    'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625841134/gfg2_xwetu9.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+  ];
+  static List<String> winingPrizes = [
+    '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
+    '- Winning certificates',
+    '- Discount coupons of greater worth from GeeksforGeeks',
+    '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
+    '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
+    '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.\n\n- Every [valid submission] ( https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff ) made in the Tezos track will be rewarded with exclusive Schwag Kits.',
+    '- T-shirts and sippers from PrepBytes',
+    '- Rs.20000 for best Dapp built on Celo'
+  ];
+
   static String about = '''<ul>
     <li><span style="font-size: 24px; font-family: Symbol; color: rgb(255, 255, 255);">MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!</span></li>
     <li><span style="font-family: Symbol;"><span style="font-size: 24px; color: rgb(255, 255, 255);">Choose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.</span></span></li>
 </ul>''';
+
+  static String aboutV2 =
+      "MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!\nChoose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.";
 }
