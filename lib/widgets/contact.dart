@@ -37,10 +37,10 @@ class Contact extends StatelessWidget {
               ),
               Center(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: IconButton(
                         onPressed: () {
                           canLaunch(
@@ -63,7 +63,7 @@ class Contact extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: IconButton(
                         onPressed: () {
                           canLaunch(
@@ -86,7 +86,7 @@ class Contact extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: IconButton(
                         onPressed: () {
                            canLaunch(
@@ -105,6 +105,7 @@ class Contact extends StatelessWidget {
                         icon: FaIcon(
                           Icons.email,
                           color: Colors.white,
+                          size: 20.sp,
                         ),
                         
                       ),

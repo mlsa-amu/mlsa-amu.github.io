@@ -99,6 +99,20 @@ class Static {
     'v1625389952/web_ruidxl.png',
     'v1625389956/iot_qxnf00.png',
   ];
+  static List<String> partPrizesContent = [
+    ' Discount coupon of PrepBytes courses worth Rs.500',
+    ' Discount coupon of GeeksforGeeks courses worth Rs.300',
+    ' Free .xyz domain worth  Rs. 700',
+    ' 1 month free subscription of Replit hacker plan worth Rs.500',
+    ' Microsoft Learn Student Ambassadors Digital Swags and Participation certificates',
+  ];
+  static List<String> partPrizes = [
+    'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625836106/xyz-logo-white_t6m8tf.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625834828/replit2_f7t4r1.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+  ];
   static List<String> silverSponsorsLogo = [
     'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
