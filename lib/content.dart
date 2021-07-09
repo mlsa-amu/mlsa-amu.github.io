@@ -99,6 +99,20 @@ class Static {
     'v1625389952/web_ruidxl.png',
     'v1625389956/iot_qxnf00.png',
   ];
+  static List<String> partPrizesContent = [
+    ' Discount coupon of PrepBytes courses worth Rs.500',
+    ' Discount coupon of GeeksforGeeks courses worth Rs.300',
+    ' Free .xyz domain worth  Rs. 700',
+    ' 1 month free subscription of Replit hacker plan worth Rs.500',
+    ' Microsoft Learn Student Ambassadors Digital Swags and Participation certificates',
+  ];
+  static List<String> partPrizes = [
+    'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625836106/xyz-logo-white_t6m8tf.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625834828/replit2_f7t4r1.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+  ];
   static String about = '''<ul>
     <li><span style="font-size: 24px; font-family: Symbol; color: rgb(255, 255, 255);">MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!</span></li>
     <li><span style="font-family: Symbol;"><span style="font-size: 24px; color: rgb(255, 255, 255);">Choose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.</span></span></li>

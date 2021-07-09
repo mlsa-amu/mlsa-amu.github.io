@@ -29,7 +29,7 @@ class Footer extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 child: Text(
-                  'Made with ❤️ by Vidita Agrawal',
+                  'Made with ❤️ by Technical Team',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,

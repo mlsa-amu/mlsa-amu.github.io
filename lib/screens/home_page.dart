@@ -9,6 +9,7 @@ import 'package:mlsa_amu/widgets/footer.dart';
 import 'package:mlsa_amu/widgets/home.dart';
 import 'package:mlsa_amu/widgets/jury.dart';
 import 'package:mlsa_amu/widgets/organizingTeam.dart';
+import 'package:mlsa_amu/widgets/participation_prizes.dart';
 import 'package:mlsa_amu/widgets/sponsors.dart';
 import 'package:mlsa_amu/widgets/timeline.dart';
 import 'package:sizer/sizer.dart';
@@ -372,6 +373,7 @@ class _HomePageState extends State<HomePage> {
                           child: Jury(),
                         ),
                         //InitialJury(),
+                        ParticipationPrizes(),
                         Opacity(
                           opacity: 0.9,
                           child: Sponsors(),
