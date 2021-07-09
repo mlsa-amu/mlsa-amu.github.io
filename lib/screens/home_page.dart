@@ -197,17 +197,23 @@ class _HomePageState extends State<HomePage> {
         body: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            gradient: new LinearGradient(
-              colors: [
-                //Colors.teal,
-                Color(0xff1f2021),
-                Colors.red.shade900,
-                // Color(0xff1f2021),
-                // Colors.purple,
-                Color(0xff1f2021),
-                Colors.red.shade900,
-                Color(0xff1f2021),
-              ],
+            // gradient: new LinearGradient(
+            //   colors: [
+            //     //Colors.teal,
+            //     Color(0xff1f2021),
+            //     Colors.red.shade900,
+            //     // Color(0xff1f2021),
+            //     // Colors.purple,
+            //     Color(0xff1f2021),
+            //     Colors.red.shade900,
+            //     Color(0xff1f2021),
+            //   ],
+            // ),
+            image: DecorationImage(
+              image: AssetImage(
+                'assets/images/bg.jpg',
+              ),
+              fit: BoxFit.cover,
             ),
           ),
           child: Container(
@@ -218,11 +224,11 @@ class _HomePageState extends State<HomePage> {
               physics: ClampingScrollPhysics(),
               child: Column(
                 children: [
-                  // Center(
-                  //   child: SizerUtil.orientation == Orientation.portrait
-                  //       ? BannerMobile()
-                  //       : BannerDesk(),
-                  // ),
+                  Center(
+                    child: SizerUtil.orientation == Orientation.portrait
+                        ? BannerMobile()
+                        : BannerDesk(),
+                  ),
                   Column(
                     children: [
                       Center(
@@ -351,44 +357,44 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ],
                             ),
-                            // SizerUtil.orientation == Orientation.landscape
-                            //     ? GridView.builder(
-                            //         physics: ClampingScrollPhysics(),
-                            //         shrinkWrap: true,
-                            //         gridDelegate:
-                            //             SliverGridDelegateWithFixedCrossAxisCount(
-                            //           crossAxisCount: 3,
-                            //           // mainAxisSpacing: 5,
-                            //           // crossAxisSpacing: 5,
-                            //           childAspectRatio: 0.8,
-                            //         ),
-                            //         itemCount: 6,
-                            //         itemBuilder: (context, index) {
-                            //           return _buildFlipAnimation(index);
-                            //         },
-                            //       )
-                            //     : ListView.builder(
-                            //         physics: ClampingScrollPhysics(),
-                            //         shrinkWrap: true,
-                            //         itemCount: 6,
-                            //         itemBuilder: (context, index) {
-                            //           return _buildFlipAnimation(index);
-                            //         },
-                            //       ),
+                            SizerUtil.orientation == Orientation.landscape
+                                ? GridView.builder(
+                                    physics: ClampingScrollPhysics(),
+                                    shrinkWrap: true,
+                                    gridDelegate:
+                                        SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 3,
+                                      // mainAxisSpacing: 5,
+                                      // crossAxisSpacing: 5,
+                                      childAspectRatio: 0.8,
+                                    ),
+                                    itemCount: 6,
+                                    itemBuilder: (context, index) {
+                                      return _buildFlipAnimation(index);
+                                    },
+                                  )
+                                : ListView.builder(
+                                    physics: ClampingScrollPhysics(),
+                                    shrinkWrap: true,
+                                    itemCount: 6,
+                                    itemBuilder: (context, index) {
+                                      return _buildFlipAnimation(index);
+                                    },
+                                  ),
                           ],
                         ),
                       ),
                       Opacity(
-                        opacity: 0.8,
+                        opacity: 0.9,
                         child: Jury(),
                       ),
                       //InitialJury(),
                       Opacity(
-                        opacity: 0.8,
+                        opacity: 0.9,
                         child: Sponsors(),
                       ),
                       Opacity(
-                        opacity: 0.8,
+                        opacity: 0.9,
                         child: SilverSponsors(),
                       ),
                       Padding(
@@ -423,11 +429,12 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                   Padding(
-                                      padding: EdgeInsets.symmetric(
-                                        vertical: 2.w,
-                                        horizontal: 1.h,
-                                      ),
-                                      child: Timeline()),
+                                    padding: EdgeInsets.symmetric(
+                                      vertical: 2.w,
+                                      horizontal: 1.h,
+                                    ),
+                                    child: Timeline(),
+                                  ),
                                 ],
                               ),
                             ),
