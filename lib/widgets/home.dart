@@ -158,12 +158,12 @@ class BannerMobile extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     canLaunch(
-                      'amu-battlegrounds.devfolio.co',
+                      'https://amu-battlegrounds.devfolio.co/',
                     ).then(
                       (value) {
                         value
                             ? launch(
-                                'amu-battlegrounds.devfolio.co',
+                                'https://amu-battlegrounds.devfolio.co/',
                               )
                             : throw 'Could not launch';
                       },
