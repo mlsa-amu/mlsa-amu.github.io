@@ -57331,10 +57331,10 @@ Y.zb.prototype={
 N:function(a,b){var s=null,r=T.Dp(s,new U.lB(new M.E8(new D.fD(u.A,1),17976931348623157e292,C.c.cJ(b.a8(t.w).f.a.b)),1/0,s,C.ci,s),s,s,s,s,s,s),q=K.a8M(new P.bD(2,2)),p=t.D
 return T.eC(T.pb(C.T,H.a([r,T.Dp(300,D.eZ(s,M.aY(s,T.Ef(H.a([U.a9t("assets/images/devfolio_okfzaq.png",20),T.eC(s,s,10),L.bx("Apply with Devfolio",A.f4(s,s,C.i,s,s,s,s,s,s,s,s,18,s,s,s,s,!0,s,s,s,s,s,s,s),s,s,s)],p),C.c3,C.E),C.k,s,s,new S.cz(new P.v(4281823487),s,s,q,s,s,C.O),s,44,new V.X(40,8,40,8),new V.X(40,8,40,8),s,s,312),C.P,!1,s,s,s,s,s,s,s,s,s,s,new Y.NM(),s,s,s,s,s),s,s,s,s,s,s)],p),C.bI),s,1/0)}}
 Y.NM.prototype={
-$0:function(){T.eN("amu-battlegrounds.devfolio.co").az(0,new Y.NL(),t.P)},
+$0:function(){T.eN("https://amu-battlegrounds.devfolio.co/").az(0,new Y.NL(),t.P)},
 $S:0}
 Y.NL.prototype={
-$1:function(a){if(a)T.eR("amu-battlegrounds.devfolio.co")
+$1:function(a){if(a)T.eR("https://amu-battlegrounds.devfolio.co/")
 else H.d("Could not launch")},
 $S:7}
 Y.zc.prototype={
