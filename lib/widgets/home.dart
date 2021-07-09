@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BannerDesk extends StatelessWidget {
   @override
@@ -9,6 +9,7 @@ class BannerDesk extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Stack(
+        alignment: Alignment.center,
         children: [
           Positioned(
             child: Image(
@@ -20,20 +21,60 @@ class BannerDesk extends StatelessWidget {
                 ),
                 height: MediaQuery.of(context).size.height.toInt(),
                 width: double.maxFinite.toInt(),
-               
               ),
               fit: BoxFit.cover,
             ),
           ),
           Positioned(
-            top:200,
-            child: Html(
-              data: """<div
-                              class="apply-button"
-                              data-hackathon-slug="YOUR-HACKATHON-SLUG"
-                              data-button-theme="light"
-                              style="height: 44px; width: 312px"
-                        ></div>""",
+            bottom: 300,
+            child: GestureDetector(
+              onTap: () {
+                canLaunch(
+                  'amu-battlegrounds.devfolio.co',
+                ).then(
+                  (value) {
+                    value
+                        ? launch(
+                            'amu-battlegrounds.devfolio.co',
+                          )
+                        : throw 'Could not launch';
+                  },
+                );
+              },
+              child: Container(
+                height: 44,
+                width: 312,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(2),
+                  ),
+                  color: Color(0XFF3770FF),
+                ),
+                padding: EdgeInsets.symmetric(
+                  vertical: 8,
+                  horizontal: 40,
+                ),
+                margin: EdgeInsets.symmetric(
+                  vertical: 8,
+                  horizontal: 40,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/images/devfolio_okfzaq.png",
+                      height: 20,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "Apply with Devfolio",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
         ],
@@ -69,7 +110,7 @@ class BannerMobile extends StatelessWidget {
                       'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png'),
                 ),
               ),
-              //child: Image.asset('assets/images/name_mobile.jpeg'),
+              child: Image.asset('assets/images/name_mobile.jpeg'),
             ),
 
             Column(
@@ -114,14 +155,57 @@ class BannerMobile extends StatelessWidget {
                     color: Color(0xff50e6ff),
                   ),
                 ),
-                Html(
-                  data: '''<div 
-	                            class="apply-button" 
-	                            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
-	                            data-button-theme="light"
-	                            style="height: 44px; width: 312px"
-                          ></div>''',
-                )
+                GestureDetector(
+                  onTap: () {
+                    canLaunch(
+                      'amu-battlegrounds.devfolio.co',
+                    ).then(
+                      (value) {
+                        value
+                            ? launch(
+                                'amu-battlegrounds.devfolio.co',
+                              )
+                            : throw 'Could not launch';
+                      },
+                    );
+                  },
+                  child: Container(
+                    height: 44,
+                    width: 312,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(2),
+                      ),
+                      color: Color(0XFF3770FF),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      vertical: 8,
+                      horizontal: 40,
+                    ),
+                    margin: EdgeInsets.symmetric(
+                      vertical: 8,
+                      horizontal: 40,
+                    ),
+                    child: FittedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/images/devfolio_okfzaq.png",
+                            height: 20,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Apply with Devfolio",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ],

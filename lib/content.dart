@@ -66,8 +66,8 @@ class Static {
     'v1625389953/pranshi_yylzj9.jpg',
     'v1625389955/mine_x1wgly.jpg',
     'v1625389954/saloni_oyvxtb.jpg',
-    'v1625389954/prasoon_n34acm.jpg',
     'v1625672777/yash_q6jdxw.jpg',
+    'v1625850929/harsh_ywmtxx.jpg',
   ];
   static List<String> linkedinTeam = [
     'http://linkedin.com/in/pranshi112',
@@ -80,8 +80,8 @@ class Static {
     'Pranshi Jindal',
     'Vidita Agrawal',
     'Saloni Gupta',
-    'Prasoon Jain',
     'Yash Agarwal',
+    'Harsh Taliwal',
   ];
   static List<String> tracks = [
     'ML/AI',
