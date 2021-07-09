@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../utils.dart';
 
 class Sponsors extends StatelessWidget {
@@ -49,10 +50,13 @@ class Sponsors extends StatelessWidget {
                           vertical: 2.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: Utils.width * 0.25,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height: Utils.width * 0.25,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+                            ),
                           ),
                         ),
                       ),
@@ -61,10 +65,25 @@ class Sponsors extends StatelessWidget {
                           vertical: 2.w,
                           horizontal: 2.h,
                         ),
-                        child: Container(
-                          height: Utils.width * 0.15,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
+                        child: GestureDetector(
+                          onTap: () {
+                            canLaunch(
+                              'https://devfolio.co',
+                            ).then(
+                              (value) {
+                                value
+                                    ? launch(
+                                        'https://devfolio.co',
+                                      )
+                                    : throw 'Could not launch';
+                              },
+                            );
+                          },
+                          child: Container(
+                            height: Utils.width * 0.15,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
+                            ),
                           ),
                         ),
                       ),
@@ -76,10 +95,13 @@ class Sponsors extends StatelessWidget {
                                   : 4.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: Utils.width * 0.25,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height: Utils.width * 0.25,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625695097/gfg_irulv8.png',
+                            ),
                           ),
                         ),
                       ),
@@ -141,12 +163,28 @@ class SilverSponsors extends StatelessWidget {
                           vertical: 4.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: SizerUtil.orientation == Orientation.landscape
-                              ? Utils.width * 0.10
-                              : Utils.width * 0.15,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
+                        child: GestureDetector(
+                          onTap: () {
+                            canLaunch(
+                              'https://polygon.technology/',
+                            ).then(
+                              (value) {
+                                value
+                                    ? launch(
+                                        'https://polygon.technology/',
+                                      )
+                                    : throw 'Could not launch';
+                              },
+                            );
+                          },
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.10
+                                    : Utils.width * 0.15,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747170/polygon_j5m5lz.png',
+                            ),
                           ),
                         ),
                       ),
@@ -155,12 +193,28 @@ class SilverSponsors extends StatelessWidget {
                           vertical: 4.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: SizerUtil.orientation == Orientation.landscape
-                              ? Utils.width * 0.10
-                              : Utils.width * 0.15,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
+                        child: GestureDetector(
+                          onTap: () {
+                            canLaunch(
+                              'https://tezos.com',
+                            ).then(
+                              (value) {
+                                value
+                                    ? launch(
+                                        'https://tezos.com',
+                                      )
+                                    : throw 'Could not launch';
+                              },
+                            );
+                          },
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.10
+                                    : Utils.width * 0.15,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
+                            ),
                           ),
                         ),
                       ),
@@ -169,12 +223,28 @@ class SilverSponsors extends StatelessWidget {
                           vertical: 4.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: SizerUtil.orientation == Orientation.landscape
-                              ? Utils.width * 0.10
-                              : Utils.width * 0.25,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+                        child: GestureDetector(
+                          onTap: () {
+                            canLaunch(
+                              'https://celo.org',
+                            ).then(
+                              (value) {
+                                value
+                                    ? launch(
+                                        'https://celo.org',
+                                      )
+                                    : throw 'Could not launch';
+                              },
+                            );
+                          },
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.10
+                                    : Utils.width * 0.25,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+                            ),
                           ),
                         ),
                       ),
@@ -183,12 +253,28 @@ class SilverSponsors extends StatelessWidget {
                           vertical: 4.w,
                           horizontal: 1.h,
                         ),
-                        child: Container(
-                          height: SizerUtil.orientation == Orientation.landscape
-                              ? Utils.width * 0.10
-                              : Utils.width * 0.15,
-                          child: Image.network(
-                            'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
+                        child: GestureDetector(
+                          onTap: () {
+                            canLaunch(
+                              'https://www.portis.io/',
+                            ).then(
+                              (value) {
+                                value
+                                    ? launch(
+                                        'https://www.portis.io/',
+                                      )
+                                    : throw 'Could not launch';
+                              },
+                            );
+                          },
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.10
+                                    : Utils.width * 0.15,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
+                            ),
                           ),
                         ),
                       ),

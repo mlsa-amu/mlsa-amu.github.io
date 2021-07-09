@@ -11,6 +11,7 @@ import 'package:mlsa_amu/widgets/jury.dart';
 import 'package:mlsa_amu/widgets/organizingTeam.dart';
 import 'package:mlsa_amu/widgets/sponsors.dart';
 import 'package:mlsa_amu/widgets/timeline.dart';
+import 'package:mlsa_amu/widgets/winingPrizes.dart';
 import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
@@ -388,7 +389,7 @@ class _HomePageState extends State<HomePage> {
                         opacity: 0.9,
                         child: Jury(),
                       ),
-                      //InitialJury(),
+                      // //InitialJury(),
                       Opacity(
                         opacity: 0.9,
                         child: Sponsors(),
@@ -441,6 +442,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
+                      WiningPrizes(),
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),
@@ -453,9 +455,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      // Team(),
-                      // Contact(),
-                      // Footer(),
+                      Team(),
+                      Contact(),
+                      Footer(),
                     ],
                   ),
                 ],
