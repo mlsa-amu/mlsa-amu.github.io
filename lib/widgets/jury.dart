@@ -40,10 +40,10 @@ class Jury extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: SizerUtil.orientation == Orientation.portrait &&
-                          SizerUtil.deviceType == DeviceType.mobile
-                      ? 85.h
-                      : 30.h,
+                  // height: SizerUtil.orientation == Orientation.portrait &&
+                  //         SizerUtil.deviceType == DeviceType.mobile
+                  //     ? 85.h
+                  //     : 30.h,
                   margin: SizerUtil.orientation == Orientation.portrait &&
                           SizerUtil.deviceType == DeviceType.mobile
                       ? null
@@ -55,6 +55,9 @@ class Jury extends StatelessWidget {
                   child: ListView.builder(
                     itemCount: Static.jury.length,
                     shrinkWrap: true,
+                    physics: SizerUtil.orientation == Orientation.portrait
+                        ? NeverScrollableScrollPhysics()
+                        : null,
                     scrollDirection:
                         SizerUtil.orientation == Orientation.portrait
                             ? Axis.vertical
