@@ -184,17 +184,25 @@ class _HomePageState extends State<HomePage> {
         body: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            gradient: new LinearGradient(
-              colors: [
-                //Colors.teal,
-                Color(0xff1f2021),
-                Colors.red.shade900,
-                // Color(0xff1f2021),
-                // Colors.purple,
-                Color(0xff1f2021),
-                Colors.red.shade900,
-                Color(0xff1f2021),
-              ],
+            // gradient: new LinearGradient(
+            //   colors: [
+            //     //Colors.teal,
+            //     Color(0xff1f2021),
+            //     Colors.red.shade900,
+            //     // Color(0xff1f2021),
+            //     // Colors.purple,
+            //     Color(0xff1f2021),
+            //     Colors.red.shade900,
+            //     Color(0xff1f2021),
+            //   ],
+            // ),
+            image: DecorationImage(
+              image: AssetImage(
+                
+                 'assets/images/bg.jpg',
+                
+              ),
+              fit: BoxFit.cover,
             ),
           ),
           child: Container(
@@ -360,16 +368,16 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         Opacity(
-                          opacity: 0.8,
+                          opacity: 0.9,
                           child: Jury(),
                         ),
                         //InitialJury(),
                         Opacity(
-                          opacity: 0.8,
+                          opacity: 0.9,
                           child: Sponsors(),
                         ),
                         Opacity(
-                          opacity: 0.8,
+                          opacity: 0.9,
                           child: SilverSponsors(),
                         ),
                         Padding(
