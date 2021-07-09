@@ -215,7 +215,7 @@ class _HomePageState extends State<HomePage> {
               image: AssetImage(
                 'assets/images/bg.jpg',
               ),
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
           ),
           child: Container(
@@ -266,8 +266,8 @@ class _HomePageState extends State<HomePage> {
                                           style: GoogleFonts.aBeeZee(
                                             fontSize: SizerUtil.orientation ==
                                                     Orientation.landscape
-                                                ? 25.sp
-                                                : 13.sp,
+                                                ? 18.sp
+                                                : 20.sp,
                                             fontWeight: FontWeight.bold,
                                             color: Color(0xff50e6ff),
                                           ),
@@ -412,6 +412,10 @@ class _HomePageState extends State<HomePage> {
                             color: Color(0xff18191a),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
+                              side: BorderSide(
+                                color: Color(0XFFC00902),
+                                width: 1,
+                              ),
                             ),
                             elevation: 100,
                             child: SingleChildScrollView(

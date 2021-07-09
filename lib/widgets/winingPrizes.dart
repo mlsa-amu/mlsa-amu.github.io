@@ -28,7 +28,7 @@ class WiningPrizes extends StatelessWidget {
                     horizontal: 1.h,
                   ),
                   child: Text(
-                    'Wining Prizes',
+                    'Winning Prizes',
                     style: GoogleFonts.balooBhai(
                       fontSize: 25.sp,
                       fontWeight: FontWeight.w600,

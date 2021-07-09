@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mlsa_amu/utils.dart';
 import 'package:sizer/sizer.dart';
 
@@ -19,96 +20,115 @@ class ParticipationPrizes extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           elevation: 100,
-          child: new CarouselSlider(
-            options: new CarouselOptions(
-              initialPage: 2,
-              aspectRatio: 0.8,
-              viewportFraction:
-                  SizerUtil.orientation == Orientation.portrait ? 0.45 : 0.18,
-              enlargeCenterPage: true,
-              enableInfiniteScroll: false,
-              scrollDirection: Axis.horizontal,
-            ),
-            items: Static.partPrizesContent.map((img) {
-              return new Builder(
-                builder: (BuildContext context) {
-                  return ClipRRect(
-                    child: new Container(
-                      width: Utils.width * 0.6,
-                      padding: const EdgeInsets.all(8.0),
-                      margin: const EdgeInsets.all(8.0),
-                      decoration: BoxDecoration(
-                        color: Static.colors[Static.partPrizesContent.indexOf(img)],
-                        // image: DecorationImage(
-                        //   image: AssetImage(
-                        //     'assets/images/pBg.png',
-                        //   ),
-                        //   fit: BoxFit.cover
-                        // ),
-                        // gradient: new LinearGradient(
-                        //   colors: [
-                        //     Color(0xff1f2021),
-                        //     Colors.red.shade900,
-                        //     Color(0xff1f2021),
-                        //     Colors.red.shade900,
-                        //     Color(0xff1f2021),
-                        //   ],
-                        // ),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: new Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              height: Utils.width * 0.065,
-                              child: Center(
-                                child: Image.network(
-                                  Static.partPrizes[
-                                      Static.partPrizesContent.indexOf(img)],
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  vertical: 2.w,
+                  horizontal: 1.h,
+                ),
+                child: Text(
+                  'Participation Prizes',
+                  style: GoogleFonts.balooBhai(
+                    fontSize: 25.sp,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              new CarouselSlider(
+                options: new CarouselOptions(
+                  initialPage: 2,
+                  aspectRatio: 0.8,
+                  viewportFraction:
+                      SizerUtil.orientation == Orientation.portrait
+                          ? 0.45
+                          : 0.18,
+                  enlargeCenterPage: true,
+                  enableInfiniteScroll: false,
+                  scrollDirection: Axis.horizontal,
+                ),
+                items: Static.partPrizesContent.map((img) {
+                  return new Builder(
+                    builder: (BuildContext context) {
+                      return ClipRRect(
+                        child: new Container(
+                          width: Utils.width * 0.6,
+                          padding: const EdgeInsets.all(8.0),
+                          margin: const EdgeInsets.all(8.0),
+                          decoration: BoxDecoration(
+                            //color: Color(0xff890f2b),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/images/pBg.png',
                                 ),
-                              ),
-                            ),
+                                fit: BoxFit.cover),
+                            // gradient: new LinearGradient(
+                            //   colors: [
+                            //     Color(0xff1f2021),
+                            //     Colors.red.shade900,
+                            //     Color(0xff1f2021),
+                            //     Colors.red.shade900,
+                            //     Color(0xff1f2021),
+                            //   ],
+                            // ),
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                          GestureDetector(
-                            onTap: () {
-                              print("PRSSED");
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Card(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: Colors.red.shade900,
-                                  ),
-                                ),
-                                color: Colors.black,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: Text(
-                                    img,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 4.5.sp,
+                          child: new Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: Utils.width * 0.065,
+                                  child: Center(
+                                    child: Image.network(
+                                      Static.partPrizes[Static.partPrizesContent
+                                          .indexOf(img)],
                                     ),
-                                    textAlign: TextAlign.center,
-                                    textScaleFactor: 1.5,
-                                    textDirection: TextDirection.ltr,
                                   ),
                                 ),
                               ),
-                            ),
+                              GestureDetector(
+                                onTap: () {
+                                  print("PRSSED");
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30),
+                                      side: BorderSide(
+                                        color: Colors.red.shade900,
+                                      ),
+                                    ),
+                                    color: Colors.black,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: Text(
+                                        img,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 4.5.sp,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                        textScaleFactor: 1.5,
+                                        textDirection: TextDirection.ltr,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    ),
+                        ),
+                      );
+                    },
                   );
-                },
-              );
-            }).toList(),
+                }).toList(),
+              ),
+            ],
           ),
         ),
       ),
