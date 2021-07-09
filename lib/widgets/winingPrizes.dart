@@ -70,10 +70,11 @@ class WiningPrizes extends StatelessWidget {
     return Container(
       width: SizerUtil.orientation == Orientation.landscape ? 55.w : null,
       decoration: BoxDecoration(
-        border: Border.all(
-          color: Color(0XFFC00902),
-          width: 1,
-        ),
+        color: Static.colors[index],
+        // border: Border.all(
+        //   color: Color(0XFFC00902),
+        //   width: 1,
+        // ),
         borderRadius: BorderRadius.all(
           Radius.circular(10),
         ),

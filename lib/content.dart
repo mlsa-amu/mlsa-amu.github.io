@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Static {
   static List<String> themes = [
     'Education',
@@ -62,6 +64,18 @@ class Static {
     '''               Prateek Jain
     Software Engineer at Glints''',
   ];
+  static List colors = [
+    Colors.blue[900],
+    Colors.green,
+    Colors.orange[900],
+    Colors.purple[900],
+    Colors.pink[900],
+    Colors.amber,
+    Colors.pink,
+    Colors.purple[900],
+    Colors.purple,
+    
+  ];
   static List<String> organizingImages = [
     'v1625389953/pranshi_yylzj9.jpg',
     'v1625389955/mine_x1wgly.jpg',
@@ -121,7 +135,7 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625747171/portis_doybab.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
-    'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625834939/celo_b1tzlu.png',
   ];
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
@@ -129,7 +143,7 @@ class Static {
     '- Discount coupons of greater worth from GeeksforGeeks',
     '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
     '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
-    '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.\n\n- Every [valid submission] ( https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff ) made in the Tezos track will be rewarded with exclusive Schwag Kits.',
+    '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
     '- T-shirts and sippers from PrepBytes',
     '- Rs.20000 for best Dapp built on Celo'
   ];

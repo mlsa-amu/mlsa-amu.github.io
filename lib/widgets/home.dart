@@ -16,8 +16,8 @@ class BannerDesk extends StatelessWidget {
               width: double.infinity,
               //height: MediaQuery.of(context).size.height,
               image: ResizeImage(
-                NetworkImage(
-                  'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png',
+                AssetImage(
+                  'assets/images/bg.png',
                 ),
                 height: MediaQuery.of(context).size.height.toInt(),
                 width: double.maxFinite.toInt(),
@@ -30,12 +30,12 @@ class BannerDesk extends StatelessWidget {
             child: GestureDetector(
               onTap: () {
                 canLaunch(
-                  'amu-battlegrounds.devfolio.co',
+                  'https://amu-battlegrounds.devfolio.co/',
                 ).then(
                   (value) {
                     value
                         ? launch(
-                            'amu-battlegrounds.devfolio.co',
+                            'https://amu-battlegrounds.devfolio.co/',
                           )
                         : throw 'Could not launch';
                   },
@@ -106,7 +106,7 @@ class BannerMobile extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 image: DecorationImage(
-                  image: AssetImage(
+                  image: NetworkImage(
                       'https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png'),
                 ),
               ),
