@@ -15,6 +15,10 @@ class Jury extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+            side: BorderSide(
+              color: Color(0XFFC00902),
+              width: 1,
+            ),
           ),
           elevation: 100,
           child: SingleChildScrollView(
@@ -38,78 +42,72 @@ class Jury extends StatelessWidget {
                 Container(
                   height: SizerUtil.orientation == Orientation.portrait &&
                           SizerUtil.deviceType == DeviceType.mobile
-                      ? 65.h
-                      : 25.h,
+                      ? 85.h
+                      : 30.h,
                   margin: SizerUtil.orientation == Orientation.portrait &&
                           SizerUtil.deviceType == DeviceType.mobile
                       ? null
                       : EdgeInsets.symmetric(
-                          vertical: 2.w,
+                          vertical: 1.w,
                           horizontal: 3.h,
                         ),
                   width: 200.w,
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        ListView.builder(
-                          itemCount: Static.jury.length,
-                          shrinkWrap: true,
-                          scrollDirection: Axis.horizontal,
-                          //itemExtent: Utils.width * 0.15,
-                          itemBuilder: (BuildContext context, int index) {
-                            return Padding(
+                  child: ListView.builder(
+                    itemCount: Static.jury.length,
+                    shrinkWrap: true,
+                    scrollDirection:
+                        SizerUtil.orientation == Orientation.portrait
+                            ? Axis.vertical
+                            : Axis.horizontal,
+                    //itemExtent: Utils.width * 0.15,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 2.w,
+                          //horizontal: 1.h,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
                               padding: EdgeInsets.symmetric(
                                 vertical: 2.w,
                                 //horizontal: 1.h,
                               ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(
-                                      vertical: 2.w,
-                                      //horizontal: 1.h,
-                                    ),
-                                    child: CircleAvatar(
-                                      radius: SizerUtil.orientation ==
-                                                  Orientation.portrait &&
-                                              SizerUtil.deviceType ==
-                                                  DeviceType.mobile
-                                          ? Utils.height * 0.20
-                                          : Utils.height * 0.06,
-                                      backgroundImage: NetworkImage(
-                                        'https://res.cloudinary.com/vidita/image/upload/' +
-                                            Static.juryImages[index],
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(
-                                      vertical: 2.w,
-                                      horizontal: 1.h,
-                                    ),
-                                    child: Text(
-                                      Static.jury[index],
-                                      style: GoogleFonts.ledger(
-                                        fontSize: SizerUtil.orientation ==
-                                                Orientation.portrait
-                                            ? 12.sp
-                                            : 5.5.sp,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                              child: CircleAvatar(
+                                radius: SizerUtil.orientation ==
+                                            Orientation.portrait &&
+                                        SizerUtil.deviceType ==
+                                            DeviceType.mobile
+                                    ? Utils.height * 0.20
+                                    : Utils.height * 0.06,
+                                backgroundImage: NetworkImage(
+                                  'https://res.cloudinary.com/vidita/image/upload/' +
+                                      Static.juryImages[index],
+                                ),
                               ),
-                            );
-                          },
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 2.w,
+                                horizontal: 1.h,
+                              ),
+                              child: Text(
+                                Static.jury[index],
+                                style: GoogleFonts.ledger(
+                                  fontSize: SizerUtil.orientation ==
+                                          Orientation.portrait
+                                      ? 12.sp
+                                      : 5.5.sp,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
+                      );
+                    },
                   ),
                 ),
               ],

@@ -378,10 +378,10 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                       ),
-                      // Opacity(
-                      //   opacity: 0.8,
-                      //   child: Jury(),
-                      // ),
+                      Opacity(
+                        opacity: 0.8,
+                        child: Jury(),
+                      ),
                       //InitialJury(),
                       Opacity(
                         opacity: 0.8,
