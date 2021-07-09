@@ -66,12 +66,12 @@ class Static {
   ];
   static List colors = [
     Colors.blue[900],
-    Colors.green,
-    Colors.orange[900],
+    Color(0xffBACD24),
+    Color(0xffC9E265),
     Colors.purple[900],
-    Colors.pink[900],
-    Colors.amber,
-    Colors.pink,
+    Color(0xff891515),
+    Color(0xff30244D),
+    Color(0xffF8D445),
     Colors.purple[900],
     Colors.purple,
     
@@ -139,13 +139,13 @@ class Static {
   ];
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
-    '- Winning certificates',
-    '- Discount coupons of greater worth from GeeksforGeeks',
+    'Winning certificates',
+    'Discount coupons of greater worth from GeeksforGeeks',
     '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
     '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
     '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
-    '- T-shirts and sippers from PrepBytes',
-    '- Rs.20000 for best Dapp built on Celo'
+    'T-shirts and sippers from PrepBytes',
+    'Rs.20000 for best Dapp built on Celo'
   ];
 
   static String about = '''<ul>

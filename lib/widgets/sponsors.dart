@@ -243,7 +243,7 @@ class SilverSponsors extends StatelessWidget {
                                     ? Utils.width * 0.10
                                     : Utils.width * 0.25,
                             child: Image.network(
-                              'https://res.cloudinary.com/vidita/image/upload/v1625680187/celo_oskwjb.png',
+                              'https://res.cloudinary.com/vidita/image/upload/v1625834939/celo_b1tzlu.png',
                             ),
                           ),
                         ),

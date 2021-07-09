@@ -392,7 +392,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       //InitialJury(),
                       WiningPrizes(),
-                      ParticipationPrizes(),
+                      PPrizes(),
 
                       Opacity(
                         opacity: 0.9,

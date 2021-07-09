@@ -90,7 +90,10 @@ class WiningPrizes extends StatelessWidget {
             ),
             child: Container(
               height: SizerUtil.orientation == Orientation.landscape
-                  ? Utils.width * 0.10
+                  ? Static.silverSponsorsLogo[index] ==
+                          'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png'
+                      ? Utils.width * 0.15
+                      : Utils.width * 0.10
                   : Utils.width * 0.15,
               child: Image.network(
                 Static.silverSponsorsLogo[index],
