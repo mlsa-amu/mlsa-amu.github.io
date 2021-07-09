@@ -103,4 +103,7 @@ class Static {
     <li><span style="font-size: 24px; font-family: Symbol; color: rgb(255, 255, 255);">MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!</span></li>
     <li><span style="font-family: Symbol;"><span style="font-size: 24px; color: rgb(255, 255, 255);">Choose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.</span></span></li>
 </ul>''';
+
+  static String aboutV2 =
+      "MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!\nChoose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.";
 }
