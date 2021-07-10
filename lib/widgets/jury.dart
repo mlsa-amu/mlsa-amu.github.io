@@ -31,7 +31,7 @@ class Jury extends StatelessWidget {
                     horizontal: 1.h,
                   ),
                   child: Text(
-                    'JURY - Final Rounds',
+                    'JURY',
                     style: GoogleFonts.balooBhai(
                       fontSize: 25.sp,
                       fontWeight: FontWeight.w600,
@@ -40,18 +40,15 @@ class Jury extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  // height: SizerUtil.orientation == Orientation.portrait &&
-                  //         SizerUtil.deviceType == DeviceType.mobile
-                  //     ? 85.h
-                  //     : 30.h,
-                  margin: SizerUtil.orientation == Orientation.portrait &&
-                          SizerUtil.deviceType == DeviceType.mobile
+                  height:
+                      SizerUtil.orientation == Orientation.portrait ? null : 30.h,
+                  margin: SizerUtil.orientation == Orientation.portrait
                       ? null
                       : EdgeInsets.symmetric(
                           vertical: 1.w,
-                          horizontal: 3.h,
+                          horizontal: 5.h,
                         ),
-                  width: 200.w,
+                  //width: 200.w,
                   child: ListView.builder(
                     itemCount: Static.jury.length,
                     shrinkWrap: true,
@@ -164,7 +161,7 @@ class InitialJury extends StatelessWidget {
                           vertical: 2.w,
                           horizontal: 3.h,
                         ),
-                  width: 200.w,
+                  //width: 200.w,
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,

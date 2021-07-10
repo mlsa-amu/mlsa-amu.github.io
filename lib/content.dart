@@ -66,21 +66,28 @@ class Static {
   ];
   static List colors = [
     Colors.blue[900],
-    Colors.green,
-    Colors.orange[900],
+    Color(0xffBACD24),
+    Color(0xffC9E265),
     Colors.purple[900],
-    Colors.pink[900],
-    Colors.amber,
-    Colors.pink,
-    Colors.purple[900],
+    Color(0xffFFD600),
+    Color(0xff30244D),
+    Color(0xffF8D445),
+    Color(0xffFF4D4D),
     Colors.purple,
   ];
   static List<String> organizingImages = [
     'v1625389953/pranshi_yylzj9.jpg',
-    'v1625389955/mine_x1wgly.jpg',
-    'v1625389954/saloni_oyvxtb.jpg',
-    'v1625672777/yash_q6jdxw.jpg',
+    'v1625871833/mine23_vpjxar.jpg',
+    'v1625869421/propicpink_lra8yc.png',
+    'v1625869433/IMG_9501_2_b6x2fo.jpg',
     'v1625850929/harsh_ywmtxx.jpg',
+  ];
+  static List<String> postOrg = [
+    'Lead Organizer',
+    'Technical Team',
+    'Management Team',
+    'Management Team',
+    'Technical Team',
   ];
   static List<String> linkedinTeam = [
     'http://linkedin.com/in/pranshi112',
@@ -138,13 +145,13 @@ class Static {
   ];
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
-    '- Winning certificates',
-    '- Discount coupons of greater worth from GeeksforGeeks',
+    'Winning certificates',
+    'Discount coupons of greater worth from GeeksforGeeks',
     '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
     '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
     '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
-    '- T-shirts and sippers from PrepBytes',
-    '- Rs.20000 for best Dapp built on Celo'
+    'T-shirts and sippers from PrepBytes',
+    'Rs.20000 for best Dapp built on Celo'
   ];
 
   static String about = '''<ul>

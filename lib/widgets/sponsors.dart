@@ -332,6 +332,42 @@ class SilverSponsors extends StatelessWidget {
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.15
+                                    : Utils.width * 0.20,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625871190/1P-wordmark-536px-tall_zfqtjm.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.15
+                                    : Utils.width * 0.20,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1625872461/egghead_white_ckxaoy.jpg',
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),

@@ -281,7 +281,10 @@ class _HomePageState extends State<HomePage> {
                                           textAlign: TextAlign.center,
                                           style: GoogleFonts.lato(
                                             color: Colors.white,
-                                            fontSize: 12.sp,
+                                            fontSize: SizerUtil.orientation ==
+                                                    Orientation.landscape
+                                                ? 9.sp
+                                                : 12.sp,
                                           ),
                                         ),
                                       ),
@@ -392,7 +395,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       //InitialJury(),
                       WiningPrizes(),
-                      ParticipationPrizes(),
+                      PPrizes(),
 
                       Opacity(
                         opacity: 0.9,
