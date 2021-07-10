@@ -36,6 +36,9 @@ dependencies:
   url_launcher_web: ^2.0.1
   carousel_slider:
   sizer: ^2.0.13
+  html: ^0.15.0
+  universal_html: ^2.0.8
+  http: ^0.13.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

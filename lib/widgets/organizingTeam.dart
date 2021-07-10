@@ -9,7 +9,7 @@ class Team extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 30.h,
+      height: 35.h,
       child: ListView.builder(
         itemCount: Static.organizingImages.length,
         shrinkWrap: true,
