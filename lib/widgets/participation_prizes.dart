@@ -164,9 +164,9 @@ class PPrizes extends StatelessWidget {
                     horizontal: 1.h,
                   ),
                   child: Text(
-                    'Participation Prizes',
+                    'Participation Prizes worth 💲6700',
                     style: GoogleFonts.balooBhai(
-                      fontSize: 25.sp,
+                      fontSize: 22.sp,
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),

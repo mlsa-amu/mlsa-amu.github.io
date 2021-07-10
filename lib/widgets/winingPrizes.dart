@@ -43,21 +43,15 @@ class WiningPrizes extends StatelessWidget {
                 SizerUtil.orientation == Orientation.landscape
                     ? Wrap(
                         alignment: WrapAlignment.spaceAround,
-                        children: [
-                          getPrizeItem(0),
-                          getPrizeItem(1),
-                          getPrizeItem(2),
-                          getPrizeItem(3),
-                          getPrizeItem(4),
-                          getPrizeItem(5),
-                          getPrizeItem(6),
-                          getPrizeItem(7),
-                        ],
+                        children: Static.silverSponsorsLogo.map((content) {
+                          return getPrizeItem(
+                              Static.silverSponsorsLogo.indexOf(content));
+                        }).toList(),
                       )
                     : ListView.builder(
                         physics: ClampingScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 8,
+                        itemCount: Static.silverSponsorsLogo.length,
                         itemBuilder: (context, index) {
                           return getPrizeItem(index);
                         },

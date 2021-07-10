@@ -73,6 +73,8 @@ class Static {
     Color(0xff30244D),
     Color(0xffF8D445),
     Color(0xffFF4D4D),
+    Colors.purple[900],
+    Colors.blue[900],
     Colors.purple,
   ];
   static List<String> organizingImages = [
@@ -122,9 +124,11 @@ class Static {
   static List<String> partPrizesContent = [
     ' Discount coupon of PrepBytes courses worth Rs.500',
     ' Discount coupon of GeeksforGeeks courses worth Rs.300',
-    ' Free .xyz domain worth  Rs. 700',
-    ' 1 month free subscription of Replit hacker plan worth Rs.500',
+    ' Free .xyz domain worth  💲10',
+    ' 1 month free subscription of Replit hacker plan worth 💲7',
     ' Microsoft Learn Student Ambassadors Digital Swags and Participation certificates',
+    ' Discount vouchers',
+    ' 1 Free Year of 1Password Families 💲60',
   ];
   static List<String> partPrizes = [
     'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
@@ -132,6 +136,8 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625836106/xyz-logo-white_t6m8tf.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625834828/replit2_f7t4r1.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625956359/InterView_Buddy_vjhcpd.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625871190/1P-wordmark-536px-tall_zfqtjm.png',
   ];
   static List<String> silverSponsorsLogo = [
     'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
@@ -142,6 +148,8 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625680193/tezos_h7wcvi.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625834939/celo_b1tzlu.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625956359/InterView_Buddy_vjhcpd.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1625872461/egghead_white_ckxaoy.jpg',
   ];
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
@@ -151,7 +159,9 @@ class Static {
     '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
     '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
     'T-shirts and sippers from PrepBytes',
-    'Rs.20000 for best Dapp built on Celo'
+    'Rs.20000 for best Dapp built on Celo',
+    'Async online mock interviews with unlimited practice',
+    '1 Free Year of egghead worth 💲250',
   ];
 
   static String about = '''<ul>
@@ -160,5 +170,5 @@ class Static {
 </ul>''';
 
   static String aboutV2 =
-      "MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 46-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!\nChoose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.";
+      "MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 46-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting prizes and MEMORIES!\nChoose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.";
 }

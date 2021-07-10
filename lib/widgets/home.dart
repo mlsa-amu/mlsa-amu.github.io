@@ -106,7 +106,7 @@ class BannerMobile extends StatelessWidget {
           children: [
             //Utils.height * 0.2,
             Container(
-              height: 70.h,
+              height: 42.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 image: DecorationImage(
