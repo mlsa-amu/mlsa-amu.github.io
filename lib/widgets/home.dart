@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mlsa_amu/widgets/button.dart';
 import 'package:sizer/sizer.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class BannerDesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width: double.maxFinite,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -26,55 +27,11 @@ class BannerDesk extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 300,
-            child: GestureDetector(
-              onTap: () {
-                canLaunch(
-                  'https://amu-battlegrounds.devfolio.co/',
-                ).then(
-                  (value) {
-                    value
-                        ? launch(
-                            'https://amu-battlegrounds.devfolio.co/',
-                          )
-                        : throw 'Could not launch';
-                  },
-                );
-              },
-              child: Container(
-                height: 44,
-                width: 312,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(2),
-                  ),
-                  color: Color(0XFF3770FF),
-                ),
-                padding: EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 40,
-                ),
-                margin: EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 40,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/devfolio_okfzaq.png",
-                      height: 20,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "Apply with Devfolio",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    )
-                  ],
-                ),
-              ),
+            //bottom: 17.h,
+            child: Container(
+              height: 50,
+              width: 312,
+              child: DevfolioButton(),
             ),
           ),
         ],
@@ -155,56 +112,10 @@ class BannerMobile extends StatelessWidget {
                     color: Color(0xff50e6ff),
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    canLaunch(
-                      'https://amu-battlegrounds.devfolio.co/',
-                    ).then(
-                      (value) {
-                        value
-                            ? launch(
-                                'https://amu-battlegrounds.devfolio.co/',
-                              )
-                            : throw 'Could not launch';
-                      },
-                    );
-                  },
-                  child: Container(
-                    height: 44,
-                    width: 312,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(2),
-                      ),
-                      color: Color(0XFF3770FF),
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 40,
-                    ),
-                    margin: EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 40,
-                    ),
-                    child: FittedBox(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "assets/images/devfolio_okfzaq.png",
-                            height: 20,
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            "Apply with Devfolio",
-                            style: TextStyle(color: Colors.white, fontSize: 18),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
+                Container(
+                  height: 50,
+                  width: 312,
+                  child: DevfolioButton(),
                 ),
               ],
             ),

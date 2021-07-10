@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+
 import 'screens/home_page.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 

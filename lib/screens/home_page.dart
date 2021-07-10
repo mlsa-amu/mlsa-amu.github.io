@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mlsa_amu/content.dart';
 import 'package:mlsa_amu/utils.dart';
@@ -296,6 +295,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
+
                       Container(
                         //width: Utils.width * 0.95,
                         child: Column(
@@ -397,14 +397,6 @@ class _HomePageState extends State<HomePage> {
                       WiningPrizes(),
                       PPrizes(),
 
-                      Opacity(
-                        opacity: 0.9,
-                        child: Sponsors(),
-                      ),
-                      Opacity(
-                        opacity: 0.9,
-                        child: SilverSponsors(),
-                      ),
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),
@@ -453,7 +445,14 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-
+                      Opacity(
+                        opacity: 0.9,
+                        child: Sponsors(),
+                      ),
+                      Opacity(
+                        opacity: 0.9,
+                        child: SilverSponsors(),
+                      ),
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),

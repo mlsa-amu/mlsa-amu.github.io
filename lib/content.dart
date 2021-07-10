@@ -78,7 +78,7 @@ class Static {
   static List<String> organizingImages = [
     'v1625389953/pranshi_yylzj9.jpg',
     'v1625871833/mine23_vpjxar.jpg',
-    'v1625869421/propicpink_lra8yc.png',
+    'v1625898060/saloni_rkcswj.jpg',
     'v1625869433/IMG_9501_2_b6x2fo.jpg',
     'v1625850929/harsh_ywmtxx.jpg',
   ];
