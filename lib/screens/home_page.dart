@@ -397,11 +397,7 @@ class _HomePageState extends State<HomePage> {
                       //InitialJury(),
                       WiningPrizes(),
                       PPrizes(),
-                      Container(
-                        height: 50,
-                        width: 312,
-                        child: DevfolioButton(),
-                      ),
+                     
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),
