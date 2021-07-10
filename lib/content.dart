@@ -66,7 +66,7 @@ class Static {
   ];
   static List colors = [
     Colors.blue[900],
-    Color(0xffBACD24),
+    Colors.orange,
     Color(0xffC9E265),
     Colors.purple[900],
     Color(0xffFFD600),
