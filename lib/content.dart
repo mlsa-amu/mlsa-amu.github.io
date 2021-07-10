@@ -93,8 +93,8 @@ class Static {
     'http://linkedin.com/in/pranshi112',
     'https://www.linkedin.com/in/vidita-agrawal-ba4aa1195/',
     'http://linkedin.com/in/pingsaloni',
-    'https://www.linkedin.com/in/prasoonjan006/',
     'https://www.linkedin.com/in/yash-agarwal-5a2975192/',
+    'https://www.linkedin.com/in/harsh-taliwal-1a3b23195/',
   ];
   static List<String> organizingName = [
     'Pranshi Jindal',
