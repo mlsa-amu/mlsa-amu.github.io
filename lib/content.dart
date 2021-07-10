@@ -124,11 +124,11 @@ class Static {
   static List<String> partPrizesContent = [
     ' Discount coupon of PrepBytes courses worth Rs.500',
     ' Discount coupon of GeeksforGeeks courses worth Rs.300',
-    ' Free .xyz domain worth  💲10',
-    ' 1 month free subscription of Replit hacker plan worth 💲7',
+    ' Free .xyz domain worth  \$10',
+    ' 1 month free subscription of Replit hacker plan worth \$7',
     ' Microsoft Learn Student Ambassadors Digital Swags and Participation certificates',
     ' Discount vouchers',
-    ' 1 Free Year of 1Password Families 💲60',
+    ' 1 Free Year of 1Password Families \$60',
   ];
   static List<String> partPrizes = [
     'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
@@ -161,7 +161,7 @@ class Static {
     'T-shirts and sippers from PrepBytes',
     'Rs.20000 for best Dapp built on Celo',
     'Async online mock interviews with unlimited practice',
-    '1 Free Year of egghead worth 💲250',
+    '1 Free Year of egghead worth \$250',
   ];
 
   static String about = '''<ul>
