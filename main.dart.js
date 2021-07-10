@@ -55321,7 +55321,7 @@ return P.a3($async$$0,r)},
 $S:34}
 Y.yI.prototype={
 L:function(a,b){var s,r,q,p,o=null,n="width",m=K.d8(20),l=$.ba,k=2*(l==null?H.d(H.j(n)):l)/100,j=$.bv,i=(j==null?H.d(H.j("height")):j)/100,h=K.d8(30)
-j=M.aO(o,o,C.k,o,o,new S.cV(o,X.A_(o,new D.fr("https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png",1),o),o,h,o,o,C.S),o,40*j/100,o,o,o,o,o)
+j=M.aO(o,o,C.k,o,o,new S.cV(o,X.A_(o,new D.fr("https://res.cloudinary.com/vidita/image/upload/v1625741978/home_dxty3a.png",1),o),o,h,o,o,C.S),o,70*j/100,o,o,o,o,o)
 l=L.bx("Microsoft Learn Student Ambassador",B.acs(C.i,15*(l/3)/100,C.T),o,o)
 h=$.ba
 h=L.bx("(MLSA)",B.acs(C.i,15*((h==null?H.d(H.j(n)):h)/3)/100,C.T),o,o)
