@@ -164,6 +164,32 @@ class Static {
     '1 Free Year of egghead worth \$250',
   ];
 
+  static List<String> faqsQuestions = [
+    'What is a hackathon?',
+    'What will be the mode of hackathon?',
+    'Who all can participate in the hackathon? Is there any qualification criteria?',
+    'I\'m new to hackathons. Are there any pre-requisites for participating?',
+    'What is the last date for registration?',
+    'Do I have to pay anything for registering myself for the hackathon?',
+    'Is it mandatory to participate in a team?',
+    'How many people can I have in my team?',
+    'Can the team members be from different colleges?',
+    'I can\'t find my question here!',
+  ];
+
+  static List<String> faqsAnswers = [
+    'A hackathon is an event where developers get together for a short period of time to collaborate on a project. Because the event is usually only a few hours long, the participants work quickly and often without sleep to complete their tasks. A hackathon brings together like-minded people to use new technologies to achieve a common goal.',
+    'AMU Battlegrounds is an online hackathon.',
+    'The hackathon is open to any student who is interested in problem-solving through coding & design.',
+    'All that is necessary is a desire to use tools and technologies to address real-world challenges.',
+    'Registrations will close at 11:59 p.m. on July 21, 2021.',
+    'The event is absolutely free for all the participants.',
+    'Personal choice. You can participate either in a team or individually.',
+    'A team must have a maximum of 3 members and a minimum of 2.',
+    'Yes, you can form a team with members from other colleges.',
+    'Reach out to us at mlsaamu1@gmail.com for any queries.'
+  ];
+
   static String about = '''<ul>
     <li><span style="font-size: 24px; font-family: Symbol; color: rgb(255, 255, 255);">MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!</span></li>
     <li><span style="font-family: Symbol;"><span style="font-size: 24px; color: rgb(255, 255, 255);">Choose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.</span></span></li>
