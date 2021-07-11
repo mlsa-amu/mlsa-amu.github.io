@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mlsa_amu/content.dart';
 import 'package:mlsa_amu/utils.dart';
+import 'package:mlsa_amu/widgets/button.dart';
 import 'package:mlsa_amu/widgets/contact.dart';
 import 'package:mlsa_amu/widgets/footer.dart';
 import 'package:mlsa_amu/widgets/home.dart';
@@ -396,7 +397,7 @@ class _HomePageState extends State<HomePage> {
                       //InitialJury(),
                       WiningPrizes(),
                       PPrizes(),
-
+                     
                       Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 2.w, horizontal: 1.h),

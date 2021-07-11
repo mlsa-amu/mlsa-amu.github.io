@@ -34,8 +34,8 @@ class _DevfolioButtonState extends State<DevfolioButton> {
     ];
 
     // ignore: undefined_prefixed_name
-    ui.platformViewRegistry
-        .registerViewFactory('bodyElement', (int viewID) => _containerElement);
+    // ui.platformViewRegistry
+    //     .registerViewFactory('bodyElement', (int viewID) => _containerElement);
 
     super.initState();
   }

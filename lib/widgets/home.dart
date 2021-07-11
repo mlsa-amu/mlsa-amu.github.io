@@ -2,40 +2,87 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mlsa_amu/widgets/button.dart';
 import 'package:sizer/sizer.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 class BannerDesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.maxFinite,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Positioned(
-            child: Image(
-              width: double.infinity,
-              //height: MediaQuery.of(context).size.height,
-              image: ResizeImage(
-                AssetImage(
-                  'assets/images/bg.png',
-                ),
-                height: MediaQuery.of(context).size.height.toInt(),
-                width: double.maxFinite.toInt(),
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Positioned(
+          child: Image(
+            width: double.infinity,
+            //height: MediaQuery.of(context).size.height,
+            image: ResizeImage(
+              AssetImage(
+                'assets/images/bg.png',
               ),
-              fit: BoxFit.cover,
+              height: MediaQuery.of(context).size.height.toInt(),
+              width: double.maxFinite.toInt(),
+            ),
+            fit: BoxFit.cover,
+          ),
+        ),
+        Positioned(
+          bottom: 17.h,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: InkWell(
+              onTap: () async {
+                const url = 'https://amu-battlegrounds.devfolio.co/';
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Could not launch $url';
+                }
+              },
+              child: Material(
+                elevation: 8,
+                color: Color(0XFF3770FF),
+                clipBehavior: Clip.antiAlias,
+                shadowColor: Colors.black54,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+                child: Container(
+                  width: 300,
+                  height: 42,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 25,
+                        child: Image(
+                          image: AssetImage('assets/images/devfolio_okfzaq.png'),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "Apply with Devfolio",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          fontFamily: "NunitoSans",
+                          letterSpacing: 0.4,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              // Image(
+              //   image: AssetImage("images/devfolio_button_mobile.png"),
+              // ),
             ),
           ),
-          Positioned(
-            //bottom: 17.h,
-            child: Container(
-              height: 50,
-              width: 312,
-              child: DevfolioButton(),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -59,7 +106,7 @@ class BannerMobile extends StatelessWidget {
           children: [
             //Utils.height * 0.2,
             Container(
-              height: 35.h,
+              height: 42.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 image: DecorationImage(
@@ -112,10 +159,58 @@ class BannerMobile extends StatelessWidget {
                     color: Color(0xff50e6ff),
                   ),
                 ),
-                Container(
-                  height: 50,
-                  width: 312,
-                  child: DevfolioButton(),
+                InkWell(
+                  onTap: () async {
+                    const url = 'https://amu-battlegrounds.devfolio.co/';
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                  child: Material(
+                    elevation: 8,
+                    color: Color(0XFF3770FF),
+                    clipBehavior: Clip.antiAlias,
+                    shadowColor: Colors.black54,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5),
+                    ),
+                    child: Container(
+                      width: 300,
+                      height: 42,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 25,
+                            child: Image(
+                              image: AssetImage(
+                                  'assets/images/devfolio_okfzaq.png'),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Apply with Devfolio",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              fontFamily: "NunitoSans",
+                              letterSpacing: 0.4,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  // Image(
+                  //   image: AssetImage("images/devfolio_button_mobile.png"),
+                  // ),
                 ),
               ],
             ),
