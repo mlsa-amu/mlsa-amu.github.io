@@ -185,7 +185,7 @@ class Static {
     'Registrations will close at 11:59 p.m. on July 21, 2021.',
     'The event is absolutely free for all the participants.',
     'Personal choice. You can participate either in a team or individually.',
-    'A team must have a maximum of 3 members and a minimum of 2.',
+    'A team must have a maximum of 3 members. In case you are participating alone, go for the ‘Solo’ option in the application form.',
     'Yes, you can form a team with members from other colleges.',
     'Reach out to us at mlsaamu1@gmail.com for any queries.'
   ];
