@@ -386,6 +386,24 @@ class SilverSponsors extends StatelessWidget {
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4.w,
+                          horizontal: 1.h,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            height:
+                                SizerUtil.orientation == Orientation.landscape
+                                    ? Utils.width * 0.15
+                                    : Utils.width * 0.20,
+                            child: Image.network(
+                              'https://res.cloudinary.com/vidita/image/upload/v1626349420/balsamiq_wdgqh6.png',
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
