@@ -56344,12 +56344,12 @@ $1:function(a){if(a)T.eP(u.f)
 else H.c("Could not launch")},
 $S:10}
 Z.OP.prototype={
-$0:function(){T.eM("https://discord.gg/kbzfn7Zu").az(0,new Z.OM(),t.P)},
+$0:function(){T.eM("https://discord.gg/myFggH3w").az(0,new Z.OM(),t.P)},
 $C:"$0",
 $R:0,
 $S:0}
 Z.OM.prototype={
-$1:function(a){if(a)T.eP("https://discord.gg/kbzfn7Zu")
+$1:function(a){if(a)T.eP("https://discord.gg/myFggH3w")
 else H.c("Could not launch")},
 $S:10}
 Z.OQ.prototype={
@@ -61219,7 +61219,7 @@ $.apr=H.a(["v1625389958/edu_yxijr0.png","v1625389955/health_el59ft.png","v162538
 $.apn=H.a(["v1625389958/abedB_qzuzyx.jpg","v1625389952/sagarB_w4damm.jpg","v1625389956/husainB_bdkbrv.jpg","v1625672697/rahulB_hp5war.jpg","v1625389954/prateekB_bxoop5.jpg","v1626344212/rajneeshB_z3xq3i.jpg"],t.s)
 $.apv=H.a(["Registration Starts","Registration Ends","Hackathon Starts, Opening Ceremony","Commencement of Final Round"],t.s)
 $.apu=H.a(["10 July","21 July, 11:59 PM","23 July, 7 PM","25 July, 4 PM"],t.s)
-$.apm=H.a(["        Abed Mohammad Kamaluddin\n    Manager at Marvell Semiconductor","                  Sagar Khatri\n    Software Engineer at Google","                  Husain Zaidi\n    Software Engineer at Microsoft","                  Rahul Jha\n    Engineer at DeepSource","               Prateek Jain\n    Software Engineer at Glints","                             Rajneesh Sharma\n    Software Development Engineer-1 at FlashPrep"],t.s)
+$.apm=H.a(["        Abed Mohammad Kamaluddin\n    Manager at Marvell Semiconductor","                  Sagar Khatri\n    Software Engineer at Google","                  Husain Zaidi\n    Software Engineer at Microsoft","                  Rahul Jha\n    Engineer at DeepSource","               Prateek Jain\n    Software Engineer at Glints","               Rajneesh Sharma\n    Software Engineer at FlashPrep"],t.s)
 $.apo=H.a(["v1625389953/pranshi_yylzj9.jpg","v1625871833/mine23_vpjxar.jpg","v1625898060/saloni_rkcswj.jpg","v1625869433/IMG_9501_2_b6x2fo.jpg","v1625850929/harsh_ywmtxx.jpg"],t.s)
 $.apq=H.a(["Lead Organizer","Technical Team","Management Team","Management Team","Technical Team"],t.s)
 $.aeO=H.a(["http://linkedin.com/in/pranshi112","https://www.linkedin.com/in/vidita-agrawal-ba4aa1195/","http://linkedin.com/in/pingsaloni","https://www.linkedin.com/in/yash-agarwal-5a2975192/","https://www.linkedin.com/in/harsh-taliwal-1a3b23195/"],t.s)
