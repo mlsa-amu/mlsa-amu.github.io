@@ -13,9 +13,9 @@ class Static {
     'Designing solutions that would help in managing education sectors better.',
     'Designing solutions that would help in managing healthcare better.',
     'Designing solutions to improve distribution, management and purification of environment.',
-    'Designing solutions for problems other than those aforementioned',
     'Designing solutions to ensure the safety of our females.',
     'Designing solutions to enhance the primary sector of India.',
+    'Designing solutions for problems other than those aforementioned',
   ];
   static List<String> themeImages = [
     'v1625389958/edu_yxijr0.png',
@@ -31,6 +31,7 @@ class Static {
     'v1625389956/husainB_bdkbrv.jpg',
     'v1625672697/rahulB_hp5war.jpg',
     'v1625389954/prateekB_bxoop5.jpg',
+    'v1626344212/rajneeshB_z3xq3i.jpg',
   ];
   static List<String> initialJuryImages = [
     'v1625672696/prajjwalB_v6o9rn.jpg',
@@ -63,6 +64,8 @@ class Static {
     Engineer at DeepSource''',
     '''               Prateek Jain
     Software Engineer at Glints''',
+    '''               Rajneesh Sharma
+    Software Engineer at FlashPrep''',
   ];
   static List colors = [
     Colors.blue[900],

@@ -71,12 +71,12 @@ class Contact extends StatelessWidget {
                       child: IconButton(
                         onPressed: () {
                           canLaunch(
-                            'https://discord.gg/kbzfn7Zu',
+                            'https://discord.gg/myFggH3w',
                           ).then(
                             (value) {
                               value
                                   ? launch(
-                                      'https://discord.gg/kbzfn7Zu',
+                                      'https://discord.gg/myFggH3w',
                                     )
                                   : throw 'Could not launch';
                             },
