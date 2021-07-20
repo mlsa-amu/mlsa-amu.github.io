@@ -32,6 +32,7 @@ class Static {
     'v1625672697/rahulB_hp5war.jpg',
     'v1625389954/prateekB_bxoop5.jpg',
     'v1626344212/rajneeshB_z3xq3i.jpg',
+    'v1626812758/saarthakB_dsl8ge.png',
   ];
   static List<String> initialJuryImages = [
     'v1625672696/prajjwalB_v6o9rn.jpg',
@@ -46,12 +47,14 @@ class Static {
     'Registration Ends',
     'Hackathon Starts, Opening Ceremony',
     'Commencement of Final Round',
+    'Results Announced',
   ];
   static List<String> timelineSubtitle = [
     '10 July',
     '21 July, 11:59 PM',
-    '23 July, 7 PM',
+    '23 July, 5 PM',
     '25 July, 4 PM',
+    '27 July, 4 PM',
   ];
   static List<String> jury = [
     '''        Abed Mohammad Kamaluddin
@@ -66,6 +69,10 @@ class Static {
     Software Engineer at Glints''',
     '''               Rajneesh Sharma
     Software Engineer at FlashPrep''',
+    '''            Saarthak Gupta
+    Software Engineer at Hatio''',
+     
+
   ];
   static List colors = [
     Colors.blue[900],
@@ -132,6 +139,7 @@ class Static {
     ' Microsoft Learn Student Ambassadors Digital Swags and Participation certificates',
     ' Discount vouchers',
     ' 1 Free Year of 1Password Families \$60',
+    ' 90-day extended trial promo code for the Balsamiq Cloud',
   ];
   static List<String> partPrizes = [
     'https://res.cloudinary.com/vidita/image/upload/v1625834638/prepbytes_ptx6qw.png',
@@ -141,6 +149,7 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625389955/logo_kayvjr.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625956359/InterView_Buddy_vjhcpd.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625871190/1P-wordmark-536px-tall_zfqtjm.png',
+    'https://res.cloudinary.com/vidita/image/upload/v1626349420/balsamiq_wdgqh6.png',
   ];
   static List<String> silverSponsorsLogo = [
     'https://res.cloudinary.com/vidita/image/upload/v1625747121/devfolio_okfzaq.png',
