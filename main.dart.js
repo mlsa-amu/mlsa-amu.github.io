@@ -57086,7 +57086,7 @@ k=0.5*(k==null?H.c(H.e("height")):k)/100
 s=$.bS
 if((s==null?H.c(H.e(n)):s)===C.t)m=7*(m/3)/100
 else m=12*(m/3)/100
-m=Q.eN(p,p,p,B.dB(C.i,p,m,p,1,p),"- Every [")
+m=Q.eN(p,p,p,B.dB(C.i,p,m,p,1,p),"- Every ")
 s=N.aax(p)
 s.bu=new E.a0Y()
 r=$.bS
@@ -57100,13 +57100,13 @@ if(s==null)s=H.c(H.e(n))
 q=$.aL
 if(s===C.t)s=7*((q==null?H.c(H.e(o)):q)/3)/100
 else s=12*((q==null?H.c(H.e(o)):q)/3)/100
-return new T.a0(new V.M(k,l,k,l),T.v0(p,p,C.bt,!0,p,Q.eN(H.a([m,r,Q.eN(p,p,p,B.dB(C.i,p,s,p,1,p),"] made in the Tezos track will be rewarded with exclusive Schwag Kits.")],t.VO),p,p,p,p),C.a3,p,p,1,C.aE),p)},
+return new T.a0(new V.M(k,l,k,l),T.v0(p,p,C.bt,!0,p,Q.eN(H.a([m,r,Q.eN(p,p,p,B.dB(C.i,p,s,p,1,p)," made in the Tezos track will be rewarded with exclusive Schwag Kits.")],t.VO),p,p,p,p),C.a3,p,p,1,C.aE),p)},
 J4:function(){var s,r,q,p=null,o="width",n="orientation",m=$.aL,l=2*(m==null?H.c(H.e(o)):m)/100,k=$.b6
 k=0.5*(k==null?H.c(H.e("height")):k)/100
 s=$.bS
 if((s==null?H.c(H.e(n)):s)===C.t)m=7*(m/3)/100
 else m=12*(m/3)/100
-m=Q.eN(p,p,p,B.dB(C.i,p,m,p,1,p),"- Chance to be listed amongst world class Dapps in Porti's ")
+m=Q.eN(p,p,p,B.dB(C.i,p,m,p,1,p),"- Chance to be listed amongst world class Dapps in Portis's ")
 s=N.aax(p)
 s.bu=new E.a0W()
 r=$.bS
