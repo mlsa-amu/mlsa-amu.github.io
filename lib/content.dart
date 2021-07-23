@@ -42,6 +42,20 @@ class Static {
     'Prajjwal Nijhara ',
     'Rishabh Sharma',
   ];
+    static List<String> timelineTitle = [
+    'Registration Starts',
+    'Registration Ends',
+    'Hackathon Starts, Opening Ceremony',
+    'Commencement of Final Round',
+    'Results Announced',
+  ];
+  static List<String> timelineSubtitle = [
+    '10 July',
+    '21 July, 11:59 PM',
+    '23 July, 5 PM',
+    '25 July, 4 PM',
+    '27 July, 4 PM',
+  ];
   // static List<String> timelineTitle = [
   //   'Hackathon Starts, Opening Ceremony',
   //   'First Round-Idea submission',
@@ -91,7 +105,6 @@ class Static {
     Color(0xffF8D445),
     Color(0xffFF4D4D),
     Colors.purple[900],
-    Colors.blue[900],
     Colors.purple,
   ];
   static List<String> organizingImages = [
@@ -175,7 +188,7 @@ class Static {
     'Winning certificates',
     'Discount coupons of greater worth from GeeksforGeeks',
     '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
-    '- Rs.15000 for best Dapp built on Portis',
+    '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
     '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
     'T-shirts and sippers from PrepBytes',
     'Rs.20000 for best Dapp built on Celo',
