@@ -139,7 +139,7 @@ class WiningPrizes extends StatelessWidget {
         text: TextSpan(
           children: [
             TextSpan(
-              text: "- Every [valid submission](",
+              text: "- Every [",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -164,8 +164,7 @@ class WiningPrizes extends StatelessWidget {
                     },
                   );
                 },
-              text:
-                  "https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff",
+              text: "valid submission",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.blue,
@@ -177,7 +176,7 @@ class WiningPrizes extends StatelessWidget {
             ),
             TextSpan(
               text:
-                  ") made in the Tezos track will be rewarded with exclusive Schwag Kits.",
+                  "] made in the Tezos track will be rewarded with exclusive Schwag Kits.",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -203,7 +202,7 @@ class WiningPrizes extends StatelessWidget {
           children: [
             TextSpan(
               text:
-                  "- Chance to be listed amongst world class Dapps in Porti\'s app store. ",
+                  "- Chance to be listed amongst world class Dapps in Porti\'s ",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -216,20 +215,19 @@ class WiningPrizes extends StatelessWidget {
               mouseCursor: MaterialStateMouseCursor.clickable,
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
-                  print('Login Text Clicked');
                   canLaunch(
-                    "Apps.portis.io",
+                    "https://apps.portis.io/",
                   ).then(
                     (value) {
                       value
                           ? launch(
-                              "Apps.portis.io",
+                              "https://apps.portis.io/",
                             )
                           : throw 'Could not launch';
                     },
                   );
                 },
-              text: "Apps.portis.io",
+              text: "app store.",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.blue,
