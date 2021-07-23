@@ -200,6 +200,20 @@ class Static {
     'Reach out to us at mlsaamu1@gmail.com for any queries.'
   ];
 
+  static List<String> resourceLinkHeading = [
+    "Polygon Winning Criteria",
+    "Portis Winning Criteria",
+    "Tezos Winning Criteria",
+    "Celo Winning Criteria",
+  ];
+
+  static List<String> resourceLinks = [
+    "https://www.notion.so/Polygon-Devfolio-Hackathon-Season-Prize-de8961d5eeff4780963749da0b75037c",
+    "https://www.notion.so/Portis-by-Shapeshift-Devfolio-Hackathon-Season-Prize-e198dfd094a9411b8cd0f80d76a04a90",
+    "https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff",
+    "https://www.notion.so/Celo-Devfolio-Hackathon-Season-Prize-8b98dac17f134abeae863d5d98c01ff0",
+  ];
+
   static String about = '''<ul>
     <li><span style="font-size: 24px; font-family: Symbol; color: rgb(255, 255, 255);">MLSA-AMU brings you an opportunity to showcase your unique ideas and expand your boundaries with your creativity and proficiency. AMU Battlegrounds is a 48-hours long hackathon and whether you have a formidable team or are a lone-wolf, do grab this opportunity to take home some exciting digital swags, certificates and MEMORIES!</span></li>
     <li><span style="font-family: Symbol;"><span style="font-size: 24px; color: rgb(255, 255, 255);">Choose from the given tracks or create your own under the Open Innovation track and turn your idea into reality. Get yourself tested beyond limits by the best in the industry.</span></span></li>
