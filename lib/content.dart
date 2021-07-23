@@ -42,20 +42,29 @@ class Static {
     'Prajjwal Nijhara ',
     'Rishabh Sharma',
   ];
-  static List<String> timelineTitle = [
-    'Registration Starts',
-    'Registration Ends',
-    'Hackathon Starts, Opening Ceremony',
-    'Commencement of Final Round',
-    'Results Announced',
-  ];
-  static List<String> timelineSubtitle = [
-    '10 July',
-    '21 July, 11:59 PM',
-    '23 July, 5 PM',
-    '25 July, 4 PM',
-    '27 July, 4 PM',
-  ];
+  // static List<String> timelineTitle = [
+  //   'Hackathon Starts, Opening Ceremony',
+  //   'First Round-Idea submission',
+  //   'First Round Results',
+  //   'Second Round Submissions',
+  //   'Second Round Evaluation',
+  //   'Second Round Results',
+  //   'Final submission Deadline',
+  //   'Final Round Evaluation',
+  //   'Hackathon Results Declared'
+  // ];
+  // static List<String> timelineSubtitle = [
+  //   '23 July, 7 PM',
+  //   '23 July, from 10 PM to 2 AM',
+  //   '24 July, 10 AM',
+  //   '24 July , from 2:30 PM to 3:30 PM',
+  //   '24 July, 4 PM ',
+  //   '25 July, 8 AM',
+  //   '25 July, 3 PM',
+  //   '25 July, 4 PM',
+  //   '27 July, 4 PM',
+  // ];
+
   static List<String> jury = [
     '''        Abed Mohammad Kamaluddin
     Manager at Marvell Semiconductor''',
@@ -71,8 +80,6 @@ class Static {
     Software Engineer at FlashPrep''',
     '''            Saarthak Gupta
     Software Engineer at Hatio''',
-     
-
   ];
   static List colors = [
     Colors.blue[900],
