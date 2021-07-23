@@ -42,7 +42,7 @@ class Static {
     'Prajjwal Nijhara ',
     'Rishabh Sharma',
   ];
-    static List<String> timelineTitle = [
+  static List<String> timelineTitle = [
     'Registration Starts',
     'Registration Ends',
     'Hackathon Starts, Opening Ceremony',
@@ -183,19 +183,19 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625956359/InterView_Buddy_vjhcpd.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625872461/egghead_white_ckxaoy.jpg',
   ];
+
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
     'Winning certificates',
     'Discount coupons of greater worth from GeeksforGeeks',
     '- Rs.10000 for the best hack built on Ethereum\n\n- Rs.15000, eligibility for internship/full-time role interviews, chance to land seed funding of upto 5000 USD for integrating Polygon with Ethereum hack.',
-    '- Rs.15000 for best Dapp built on Portis\n\n- Chance to be listed amongst world class Dapps in Porti\'s app store. Apps.portis.io',
+    '- Rs.15000 for best Dapp built on Portis',
     '- Rs.20000 for best Dapp built on Tezos\n\n- Rs.25000 INR for building a Flutter Tezos Wallet App.\n\n- Continuity grant opportunity up to 5,000 USD for an outstanding project.',
     'T-shirts and sippers from PrepBytes',
     'Rs.20000 for best Dapp built on Celo',
     'Async online mock interviews with unlimited practice',
     '1 Free Year of egghead worth \$250',
   ];
-
   static List<String> faqsQuestions = [
     'What is a hackathon?',
     'What will be the mode of hackathon?',

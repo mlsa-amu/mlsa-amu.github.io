@@ -218,18 +218,18 @@ class WiningPrizes extends StatelessWidget {
                 ..onTap = () {
                   print('Login Text Clicked');
                   canLaunch(
-                    "Apps.portis.io",
+                    "https://apps.portis.io/",
                   ).then(
                     (value) {
                       value
                           ? launch(
-                              "Apps.portis.io",
+                              "https://apps.portis.io/",
                             )
                           : throw 'Could not launch';
                     },
                   );
                 },
-              text: "Apps.portis.io",
+              text: "https://apps.portis.io/",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.blue,
