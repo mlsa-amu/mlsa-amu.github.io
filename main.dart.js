@@ -56779,7 +56779,7 @@ k=0.5*(k==null?H.c(H.f("height")):k)/100
 s=$.c6
 if((s==null?H.c(H.f(n)):s)===C.v)m=7*(m/3)/100
 else m=12*(m/3)/100
-m=Q.hH(p,p,p,B.e9(C.i,p,m,p,1,p),"- Chance to be listed amongst world class Dapps in Porti's ")
+m=Q.hH(p,p,p,B.e9(C.i,p,m,p,1,p),"- Chance to be listed amongst world class Dapps in Portis' ")
 s=N.aa5(p)
 s.bu=new E.a0z()
 r=$.c6
