@@ -202,7 +202,7 @@ class WiningPrizes extends StatelessWidget {
           children: [
             TextSpan(
               text:
-                  "- Chance to be listed amongst world class Dapps in Porti\'s app store. ",
+                  "- Chance to be listed amongst world class Dapps in Porti\'s ",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -215,7 +215,6 @@ class WiningPrizes extends StatelessWidget {
               mouseCursor: MaterialStateMouseCursor.clickable,
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
-                  print('Login Text Clicked');
                   canLaunch(
                     "https://apps.portis.io/",
                   ).then(
@@ -228,7 +227,7 @@ class WiningPrizes extends StatelessWidget {
                     },
                   );
                 },
-              text: "Apps.portis.io",
+              text: "app store.",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.blue,
