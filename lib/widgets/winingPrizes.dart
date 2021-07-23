@@ -1,7 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mlsa_amu/content.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../utils.dart';
 
 class WiningPrizes extends StatelessWidget {
@@ -16,7 +18,7 @@ class WiningPrizes extends StatelessWidget {
           color: Color(0xff18191a),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-             side: BorderSide(
+            side: BorderSide(
               color: Color(0XFFC00902),
               width: 1,
             ),
@@ -103,9 +105,41 @@ class WiningPrizes extends StatelessWidget {
               vertical: 2.w,
               horizontal: 0.5.h,
             ),
-            child: Text(
-              Static.winingPrizes[index],
-              // textAlign: TextAlign.center,
+            child: Column(
+              children: [
+                Text(
+                  Static.winingPrizes[index],
+                  style: GoogleFonts.lato(
+                    letterSpacing: 1,
+                    color: Colors.white,
+                    fontSize: SizerUtil.orientation == Orientation.landscape
+                        ? 7.sp
+                        : 12.sp,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (Static.silverSponsorsLogo[index].contains("tezos"))
+            getTezosClickableContent(),
+          if (Static.silverSponsorsLogo[index].contains("portis_doybab"))
+            getPortisClickableContent(),
+        ],
+      ),
+    );
+  }
+
+  Widget getTezosClickableContent() {
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        vertical: 2.w,
+        horizontal: 0.5.h,
+      ),
+      child: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text: "- Every [valid submission](",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -114,8 +148,99 @@ class WiningPrizes extends StatelessWidget {
                     : 12.sp,
               ),
             ),
-          ),
-        ],
+            TextSpan(
+              mouseCursor: MaterialStateMouseCursor.clickable,
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  canLaunch(
+                    "https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff",
+                  ).then(
+                    (value) {
+                      value
+                          ? launch(
+                              "https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff",
+                            )
+                          : throw 'Could not launch';
+                    },
+                  );
+                },
+              text:
+                  "https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff",
+              style: GoogleFonts.lato(
+                letterSpacing: 1,
+                color: Colors.blue,
+                decoration: TextDecoration.underline,
+                fontSize: SizerUtil.orientation == Orientation.landscape
+                    ? 7.sp
+                    : 12.sp,
+              ),
+            ),
+            TextSpan(
+              text:
+                  ") made in the Tezos track will be rewarded with exclusive Schwag Kits.",
+              style: GoogleFonts.lato(
+                letterSpacing: 1,
+                color: Colors.white,
+                fontSize: SizerUtil.orientation == Orientation.landscape
+                    ? 7.sp
+                    : 12.sp,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget getPortisClickableContent() {
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        vertical: 2.w,
+        horizontal: 0.5.h,
+      ),
+      child: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text:
+                  "- Chance to be listed amongst world class Dapps in Porti\'s app store. ",
+              style: GoogleFonts.lato(
+                letterSpacing: 1,
+                color: Colors.white,
+                fontSize: SizerUtil.orientation == Orientation.landscape
+                    ? 7.sp
+                    : 12.sp,
+              ),
+            ),
+            TextSpan(
+              mouseCursor: MaterialStateMouseCursor.clickable,
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  print('Login Text Clicked');
+                  canLaunch(
+                    "Apps.portis.io",
+                  ).then(
+                    (value) {
+                      value
+                          ? launch(
+                              "Apps.portis.io",
+                            )
+                          : throw 'Could not launch';
+                    },
+                  );
+                },
+              text: "Apps.portis.io",
+              style: GoogleFonts.lato(
+                letterSpacing: 1,
+                color: Colors.blue,
+                decoration: TextDecoration.underline,
+                fontSize: SizerUtil.orientation == Orientation.landscape
+                    ? 7.sp
+                    : 12.sp,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
