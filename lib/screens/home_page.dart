@@ -11,10 +11,12 @@ import 'package:mlsa_amu/widgets/home.dart';
 import 'package:mlsa_amu/widgets/jury.dart';
 import 'package:mlsa_amu/widgets/organizingTeam.dart';
 import 'package:mlsa_amu/widgets/participation_prizes.dart';
+import 'package:mlsa_amu/widgets/resource_links.dart';
 import 'package:mlsa_amu/widgets/sponsors.dart';
 import 'package:mlsa_amu/widgets/timeline.dart';
 import 'package:mlsa_amu/widgets/winingPrizes.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -261,7 +263,9 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Padding(
                                         padding: EdgeInsets.symmetric(
-                                            vertical: 2.w, horizontal: 1.h),
+                                          vertical: 2.w,
+                                          horizontal: 1.h,
+                                        ),
                                         child: Text(
                                           'About The Event',
                                           style: GoogleFonts.aBeeZee(
@@ -468,6 +472,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Team(),
+                      ResourceLinks(),
                       Faqs(),
                       Contact(),
                       Footer(),
@@ -477,6 +482,33 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+        ),
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {
+            // Add your onPressed code here!
+            canLaunch(
+              "https://drive.google.com/file/d/1PPhq6itwStnkDjO4-FhPHlvzmaBv2gVg/view",
+            ).then(
+              (value) {
+                value
+                    ? launch(
+                        "https://drive.google.com/file/d/1PPhq6itwStnkDjO4-FhPHlvzmaBv2gVg/view",
+                      )
+                    : throw 'Could not launch';
+              },
+            );
+          },
+          label: Text(
+            "Submit Format",
+            style: TextStyle(
+              color: Colors.black87,
+            ),
+          ),
+          icon: Icon(
+            Icons.fact_check_outlined,
+            color: Colors.black87,
+          ),
+          backgroundColor: Colors.amber,
         ),
       ),
     );

@@ -202,7 +202,7 @@ class WiningPrizes extends StatelessWidget {
           children: [
             TextSpan(
               text:
-                  "- Chance to be listed amongst world class Dapps in Portis\' ",
+                  "- Chance to be listed amongst world class Dapps in Portis\'s ",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
