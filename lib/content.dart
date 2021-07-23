@@ -56,6 +56,29 @@ class Static {
     '25 July, 4 PM',
     '27 July, 4 PM',
   ];
+  // static List<String> timelineTitle = [
+  //   'Hackathon Starts, Opening Ceremony',
+  //   'First Round-Idea submission',
+  //   'First Round Results',
+  //   'Second Round Submissions',
+  //   'Second Round Evaluation',
+  //   'Second Round Results',
+  //   'Final submission Deadline',
+  //   'Final Round Evaluation',
+  //   'Hackathon Results Declared'
+  // ];
+  // static List<String> timelineSubtitle = [
+  //   '23 July, 7 PM',
+  //   '23 July, from 10 PM to 2 AM',
+  //   '24 July, 10 AM',
+  //   '24 July , from 2:30 PM to 3:30 PM',
+  //   '24 July, 4 PM ',
+  //   '25 July, 8 AM',
+  //   '25 July, 3 PM',
+  //   '25 July, 4 PM',
+  //   '27 July, 4 PM',
+  // ];
+
   static List<String> jury = [
     '''        Abed Mohammad Kamaluddin
     Manager at Marvell Semiconductor''',
@@ -82,7 +105,6 @@ class Static {
     Color(0xffF8D445),
     Color(0xffFF4D4D),
     Colors.purple[900],
-    Colors.blue[900],
     Colors.purple,
   ];
   static List<String> organizingImages = [
@@ -161,6 +183,7 @@ class Static {
     'https://res.cloudinary.com/vidita/image/upload/v1625956359/InterView_Buddy_vjhcpd.png',
     'https://res.cloudinary.com/vidita/image/upload/v1625872461/egghead_white_ckxaoy.jpg',
   ];
+
   static List<String> winingPrizes = [
     '- Devfolio Schwag Kit consisting T-shirt and stickers to the top teams\n\n- Shoutout on Devfolio',
     'Winning certificates',
@@ -173,7 +196,6 @@ class Static {
     'Async online mock interviews with unlimited practice',
     '1 Free Year of egghead worth \$250',
   ];
-
   static List<String> faqsQuestions = [
     'What is a hackathon?',
     'What will be the mode of hackathon?',

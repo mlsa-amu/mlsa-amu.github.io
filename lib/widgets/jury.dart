@@ -76,6 +76,7 @@ class Jury extends StatelessWidget {
                                 //horizontal: 1.h,
                               ),
                               child: CircleAvatar(
+                                backgroundColor: Colors.white,
                                 radius: SizerUtil.orientation ==
                                             Orientation.portrait &&
                                         SizerUtil.deviceType ==
