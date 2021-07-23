@@ -139,7 +139,7 @@ class WiningPrizes extends StatelessWidget {
         text: TextSpan(
           children: [
             TextSpan(
-              text: "- Every [",
+              text: "- Every ",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -176,7 +176,7 @@ class WiningPrizes extends StatelessWidget {
             ),
             TextSpan(
               text:
-                  "] made in the Tezos track will be rewarded with exclusive Schwag Kits.",
+                  " made in the Tezos track will be rewarded with exclusive Schwag Kits.",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
@@ -202,7 +202,7 @@ class WiningPrizes extends StatelessWidget {
           children: [
             TextSpan(
               text:
-                  "- Chance to be listed amongst world class Dapps in Porti\'s ",
+                  "- Chance to be listed amongst world class Dapps in Portis\'s ",
               style: GoogleFonts.lato(
                 letterSpacing: 1,
                 color: Colors.white,
